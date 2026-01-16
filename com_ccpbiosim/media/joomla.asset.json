@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_ccpbiosim",
+  "version": "0.2.2",
+  "license": "MIT",
+  "assets": [
+    {
+      "name": "com_ccpbiosim.admin",
+      "type": "style",
+      "uri": "com_ccpbiosim/admin.css"
+    },
+    {
+      "name": "com_ccpbiosim.admin",
+      "type": "script",
+      "uri": "com_ccpbiosim/admin.js",
+      "dependencies": [
+        "jquery"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+        "name": "com_ccpbiosim.workshop",
+        "type": "style",
+        "uri": "com_ccpbiosim/workshop.css"
+    },
+    {
+        "name": "com_ccpbiosim.workshop",
+        "type": "script",
+        "uri": "com_ccpbiosim/workshop.js"
+    },
+    {
+        "name": "com_ccpbiosim.software",
+        "type": "style",
+        "uri": "com_ccpbiosim/software.css"
+    },
+    {
+        "name": "com_ccpbiosim.software",
+        "type": "script",
+        "uri": "com_ccpbiosim/software.js"
+    }
+  ]
+}
