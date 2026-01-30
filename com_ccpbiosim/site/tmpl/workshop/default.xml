@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-    <layout title="COM_CCPBIOSIM_TITLE_ITEM_VIEW_PUBLICATION" option="View">
+    <layout title="COM_CCPBIOSIM_TITLE_ITEM_VIEW_WORKSHOP" option="View">
         <message>
-                        <![CDATA[COM_CCPBIOSIM_TITLE_ITEM_VIEW_PUBLICATION_DESC]]>
+                        <![CDATA[COM_CCPBIOSIM_TITLE_ITEM_VIEW_WORKSHOP_DESC]]>
         </message>
     </layout>
 </metadata>

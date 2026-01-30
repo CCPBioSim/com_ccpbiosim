@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Ccpbiosim\Administrator\Helper;
+namespace Ccpbiosim\Component\Github\Administrator\Helper;
 // No direct access
 defined('_JEXEC') or die;
 

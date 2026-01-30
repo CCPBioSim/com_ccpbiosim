@@ -5,11 +5,11 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Ccpbiosim\Administrator\Extension;
+namespace Ccpbiosim\Component\Github\Administrator\Extension;
 
 defined('JPATH_PLATFORM') or die;
 
-use Ccpbiosim\Component\Ccpbiosim\Administrator\Service\Html\CCPBIOSIM;
+use Ccpbiosim\Component\Github\Administrator\Service\Html\CCPBIOSIM;
 use Joomla\CMS\Application\SiteApplication;
 use Joomla\CMS\Association\AssociationServiceInterface;
 use Joomla\CMS\Association\AssociationServiceTrait;
@@ -40,7 +40,7 @@ class CcpbiosimComponent extends MVCComponent implements RouterServiceInterface,
 	public function boot(ContainerInterface $container)
 	{
 		$db = $container->get('DatabaseDriver');
-		$this->getRegistry()->register('ccpbiosim', new CCPBioSim($db));
+		$this->getRegistry()->register('ccpbiosim', new CCPBIOSIM($db));
 	}
 
 	

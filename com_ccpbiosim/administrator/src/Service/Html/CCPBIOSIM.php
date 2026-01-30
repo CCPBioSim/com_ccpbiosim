@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Ccpbiosim\Administrator\Service\Html;
+namespace Ccpbiosim\Component\Github\Administrator\Service\Html;
 
 // No direct access
 defined('_JEXEC') or die;

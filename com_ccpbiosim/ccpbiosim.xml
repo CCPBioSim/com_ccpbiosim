@@ -9,7 +9,7 @@
   <authorUrl>https://github.com/jimboid</authorUrl>
   <version>v0.0.3</version>
   <description>A CCPBioSim plugin for custom organisation features.</description>
-  <namespace path="src">Ccpbiosim\Component\Ccpbiosim</namespace>
+  <namespace path="src">Ccpbiosim\Component\Github</namespace>
   <install>
     <!-- Runs on install -->
   </install>
