@@ -17,7 +17,7 @@ use Joomla\CMS\Extension\Service\Provider\MVCFactory;
 use Joomla\CMS\Extension\Service\Provider\RouterFactory;
 use Joomla\CMS\HTML\Registry;
 use Joomla\CMS\MVC\Factory\MVCFactoryInterface;
-use Ccpbiosim\Component\Ccpbiosim\Administrator\Extension\CcpbiosimComponent;
+use Ccpbiosim\Component\Github\Administrator\Extension\CcpbiosimComponent;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 
@@ -37,10 +37,10 @@ return new class implements ServiceProviderInterface
 	public function register(Container $container)
 	{
 
-		$container->registerServiceProvider(new CategoryFactory('\\Ccpbiosim\\Component\\Ccpbiosim'));
-		$container->registerServiceProvider(new MVCFactory('\\Ccpbiosim\\Component\\Ccpbiosim'));
-		$container->registerServiceProvider(new ComponentDispatcherFactory('\\Ccpbiosim\\Component\\Ccpbiosim'));
-		$container->registerServiceProvider(new RouterFactory('\\Ccpbiosim\\Component\\Ccpbiosim'));
+		$container->registerServiceProvider(new CategoryFactory('\\Ccpbiosim\\Component\\Github'));
+		$container->registerServiceProvider(new MVCFactory('\\Ccpbiosim\\Component\\Github'));
+		$container->registerServiceProvider(new ComponentDispatcherFactory('\\Ccpbiosim\\Component\\Github'));
+		$container->registerServiceProvider(new RouterFactory('\\Ccpbiosim\\Component\\Github'));
 
 		$container->set(
 			ComponentInterface::class,

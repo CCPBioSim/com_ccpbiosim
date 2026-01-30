@@ -16,7 +16,7 @@ use \Joomla\CMS\Language\Text;
 use \Joomla\CMS\Session\Session;
 use Joomla\Utilities\ArrayHelper;
 
-$params  = $this->item->params;
+$params = $this->item->params;
 ?>
 
 <link rel="stylesheet" href="media/com_ccpbiosim/css/software.css">
