@@ -1,4 +1,28 @@
+.icon-48-coreteammembers {
+      background-image: url(../images/l_coreteammembers.png);
+      padding-left:60px!important;
+}
 
+.icon-48-coreteammember {
+      background-image: url(../images/l_coreteammembers.png);
+      padding-left:60px!important;
+}
+
+.color-box-coreteammembers { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
+.icon-48-managementteams {
+      background-image: url(../images/l_managementteams.png);
+      padding-left:60px!important;
+}
+
+.icon-48-managementteam {
+      background-image: url(../images/l_managementteams.png);
+      padding-left:60px!important;
+}
+
+.color-box-managementteams { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
 
 .other-filters{
     padding: 0 14px;
