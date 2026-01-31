@@ -22,7 +22,7 @@ class DisplayController extends BaseController
 	 *
 	 * @var    string
 	 */
-	protected $default_view = '//XXX_DEFAULT_VIEW_XXX';
+	protected $default_view = 'managementteams';
 
 	/**
 	 * Method to display a view.

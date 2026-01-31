@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Ccpbiosim\Component\Github\Administrator\Field">
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="ordering"/>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="JGLOBAL_FIELD_CREATED_BY_LABEL" description="JGLOBAL_FIELD_CREATED_BY_DESC" hidden="true" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="JGLOBAL_FIELD_MODIFIED_BY_LABEL" description="JGLOBAL_FIELD_MODIFIED_BY_DESC" hidden="true" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_MODIFIED_BY"/>
+    <field name="title" type="list" required="true" label="JGLOBAL_TITLE" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_TITLE" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_TITLE">
+      <option value="mr">COM_CCPBIOSIM_CORETEAMMEMBERS_TITLE_OPTION_MR</option>
+      <option value="mrs">COM_CCPBIOSIM_CORETEAMMEMBERS_TITLE_OPTION_MRS</option>
+      <option value="miss">COM_CCPBIOSIM_CORETEAMMEMBERS_TITLE_OPTION_MISS</option>
+      <option value="doctor">COM_CCPBIOSIM_CORETEAMMEMBERS_TITLE_OPTION_DOCTOR</option>
+      <option value="prof">COM_CCPBIOSIM_CORETEAMMEMBERS_TITLE_OPTION_PROF</option>
+    </field>
+    <field name="firstname" maxlength="30" filter="safehtml" type="text" required="true" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_FIRSTNAME" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_FIRSTNAME" hint="First name of team member"/>
+    <field name="surname" maxlength="30" filter="safehtml" type="text" required="true" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_SURNAME" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_SURNAME" hint="Surname of team member"/>
+    <field name="role" filter="safehtml" type="textarea" required="true" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_ROLE" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_ROLE" hint="Team member role"/>
+    <field name="profilephoto" types="images" directory="people" type="media" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_PROFILEPHOTO" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_PROFILEPHOTO" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_PROFILEPHOTO"/>
+    <field name="groupwebsite" validate="url" type="url" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_GROUPWEBSITE" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_GROUPWEBSITE" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_GROUPWEBSITE"/>
+    <field name="social" validate="url" type="url" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_SOCIAL" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_SOCIAL" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_SOCIAL"/>
+    <field name="chair" type="checkbox" checked="" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_CHAIR" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_CHAIR" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_CHAIR"/>
+    <field name="cosecprojectlead" type="checkbox" checked="" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_COSECPROJECTLEAD" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_COSECPROJECTLEAD" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_COSECPROJECTLEAD"/>
+    <field name="adminassistant" type="checkbox" checked="" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_ADMINASSISTANT" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_ADMINASSISTANT" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_ADMINASSISTANT"/>
+    <field name="programme" type="list" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_PROGRAMME" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_PROGRAMME" hint="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_PROGRAMME">
+      <option value="epsrc">COM_CCPBIOSIM_CORETEAMMEMBERS_PROGRAMME_OPTION_EPSRC</option>
+      <option value="ukridri">COM_CCPBIOSIM_CORETEAMMEMBERS_PROGRAMME_OPTION_UKRIDRI</option>
+      <option value="psdi">COM_CCPBIOSIM_CORETEAMMEMBERS_PROGRAMME_OPTION_PSDI</option>
+    </field>
+    <field name="insitution" filter="safehtml" type="text" label="COM_CCPBIOSIM_FORM_LBL_CORETEAMMEMBER_INSITUTION" description="COM_CCPBIOSIM_FORM_DESC_CORETEAMMEMBER_INSITUTION" hint="Members institution"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>
