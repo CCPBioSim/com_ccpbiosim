@@ -1,25 +1,20 @@
 <?php
-
 /**
- * @version    CVS: 0.0.1
- * @package    Com_Test
- * @author     James Gebbie-Rayet <james.gebbie@gmail.com>
+ * @package    com_ccpbiosim
  * @copyright  2025 CCPBioSim Team
  * @license    MIT
  */
 
-namespace Testing\Component\Test\Site\Field;
+namespace Ccpbiosim\Component\Github\Site\Field;
 
 // Check to ensure this file is included in Joomla!
-defined('_JEXEC') or die('Restricted access');
+defined('_JEXEC') or die;
 
 use \Joomla\CMS\Language\Text;
 use \Joomla\CMS\Form\FormField;
 
 /**
  * Class SubmitField
- *
- * @since  0.0.1
  */
 class SubmitField extends FormField
 {

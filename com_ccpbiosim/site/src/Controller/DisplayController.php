@@ -7,7 +7,7 @@
 
 namespace Ccpbiosim\Component\Github\Site\Controller;
 
-\defined('_JEXEC') or die;
+defined('_JEXEC') or die;
 
 use Joomla\CMS\Component\ComponentHelper;
 use Joomla\CMS\Factory;
