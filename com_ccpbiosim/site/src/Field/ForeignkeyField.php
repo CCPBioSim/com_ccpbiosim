@@ -1,16 +1,13 @@
 <?php
-
 /**
- * @version    CVS: 0.0.1
- * @package    Com_Test
- * @author     James Gebbie-Rayet <james.gebbie@gmail.com>
+ * @package    com_ccpbiosim
  * @copyright  2025 CCPBioSim Team
  * @license    MIT
  */
 
-namespace Testing\Component\Test\Site\Field;
+namespace Ccpbiosim\Component\Github\Site\Field;
 
-defined('JPATH_BASE') or die;
+defined('_JEXEC') or die;
 
 use \Joomla\CMS\Factory;
 use \Joomla\CMS\HTML\HTMLHelper;
@@ -19,8 +16,6 @@ use \Joomla\CMS\Form\Field\ListField;
 
 /**
  * Supports a value from an external table
- *
- * @since  0.0.1
  */
 #[\AllowDynamicProperties]
 class ForeignKeyField extends ListField
@@ -29,7 +24,6 @@ class ForeignKeyField extends ListField
 	 * The form field type.
 	 *
 	 * @var    string
-	 * @since  0.0.1
 	 */
 	protected $type = 'foreignkey';
 
@@ -39,7 +33,6 @@ class ForeignKeyField extends ListField
 	 * The translate.
 	 *
 	 * @var    boolean
-	 * @since  0.0.1
 	 */
 	protected $translate = true;
 
@@ -63,8 +56,6 @@ class ForeignKeyField extends ListField
 	 * Method to get the field input markup.
 	 *
 	 * @return  string  The field input markup.
-	 *
-	 * @since   0.0.1
 	 */
 	protected function processQuery()
 	{
@@ -192,7 +183,6 @@ class ForeignKeyField extends ListField
 	 *
 	 * @return  string  The field input.
 	 *
-	 * @since   0.0.1
 	 */
 	protected function getInput()
 	{
@@ -229,8 +219,6 @@ class ForeignKeyField extends ListField
 	 * Method to get the field options.
 	 *
 	 * @return  array  The field option objects.
-	 *
-	 * @since   0.0.1
 	 */
 	protected function getOptions()
 	{
