@@ -18,7 +18,7 @@ use \Joomla\CMS\Object\CMSObject;
 use \Joomla\CMS\Helper\TagsHelper;
 
 /**
- * Test model.
+ * Core team model.
  *
  */
 class CoreteammemberformModel extends FormModel
