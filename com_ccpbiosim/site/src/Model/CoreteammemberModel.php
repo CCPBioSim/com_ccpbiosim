@@ -20,7 +20,7 @@ use \Joomla\CMS\User\UserFactoryInterface;
 use \Ccpbiosim\Component\Github\Site\Helper\CcpbiosimHelper;
 
 /**
- * Test model.
+ * Core team model.
  *
  */
 class CoreteammemberModel extends ItemModel

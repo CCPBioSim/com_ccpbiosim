@@ -21,7 +21,7 @@ use \Ccpbiosim\Component\Github\Site\Helper\CcpbiosimHelper;
 
 
 /**
- * Methods supporting a list of Test records.
+ * Methods supporting a list of management team records.
  *
  */
 class ManagementteamsModel extends ListModel

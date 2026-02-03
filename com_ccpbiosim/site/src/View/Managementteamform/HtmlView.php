@@ -14,7 +14,7 @@ use \Joomla\CMS\Factory;
 use \Joomla\CMS\Language\Text;
 
 /**
- * View class for a list of Test.
+ * View class for a list of management team members.
  *
  */
 class HtmlView extends BaseHtmlView
