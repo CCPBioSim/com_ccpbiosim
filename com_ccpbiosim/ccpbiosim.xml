@@ -7,20 +7,23 @@
   <author>James Gebbie-Rayet</author>
   <authorEmail>james.gebbie@gmail.com</authorEmail>
   <authorUrl>https://github.com/jimboid</authorUrl>
-  <version>v0.0.3</version>
+  <version>v0.0.4</version>
   <description>A CCPBioSim plugin for custom organisation features.</description>
   <namespace path="src">Ccpbiosim\Component\Ccpbiosim</namespace>
-  <install> <!-- Runs on install -->
+  <install>
+    <!-- Runs on install -->
     <sql>
       <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
     </sql>
   </install>
-  <update> <!-- Runs on update -->
+  <update>
+    <!-- Runs on update -->
     <schemas>
       <schemapath type="mysql">sql/updates</schemapath>
     </schemas>
   </update>
-  <uninstall> <!-- Runs on uninstall -->
+  <uninstall>
+    <!-- Runs on uninstall -->
     <sql>
       <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
     </sql>
@@ -39,10 +42,10 @@
     <language tag="en-GB">en-GB/com_ccpbiosim.ini</language>
   </languages>
   <administration>
-  <menu>COM_CCPBIOSIM</menu>
+    <menu>COM_CCPBIOSIM</menu>
     <submenu>
-		  <menu link="option=com_ccpbiosim&amp;view=coreteammembers" view="coreteammembers" alt="Ccpbiosim/Coreteammembers">COM_CCPBIOSIM_TITLE_CORETEAMMEMBERS</menu>
-		  <menu link="option=com_ccpbiosim&amp;view=managementteams" view="managementteams" alt="Ccpbiosim/Managementteams">COM_CCPBIOSIM_TITLE_MANAGEMENTTEAMS</menu>
+      <menu link="option=com_ccpbiosim&amp;view=coreteammembers" view="coreteammembers" alt="Ccpbiosim/Coreteammembers">COM_CCPBIOSIM_TITLE_CORETEAMMEMBERS</menu>
+      <menu link="option=com_ccpbiosim&amp;view=managementteams" view="managementteams" alt="Ccpbiosim/Managementteams">COM_CCPBIOSIM_TITLE_MANAGEMENTTEAMS</menu>
     </submenu>
     <files folder="administrator">
       <filename>access.xml</filename>
