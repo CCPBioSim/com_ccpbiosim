@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Site\Controller;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\Controller;
 
 \defined('_JEXEC') or die;
 

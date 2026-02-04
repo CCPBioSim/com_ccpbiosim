@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Administrator\Field;
+namespace Ccpbiosim\Component\Ccpbiosim\Administrator\Field;
 
 defined('_JEXEC') or die;
 

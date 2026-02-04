@@ -9,7 +9,7 @@
   <authorUrl>https://github.com/jimboid</authorUrl>
   <version>v0.0.3</version>
   <description>A CCPBioSim plugin for custom organisation features.</description>
-  <namespace path="src">Ccpbiosim\Component\Github</namespace>
+  <namespace path="src">Ccpbiosim\Component\Ccpbiosim</namespace>
   <install> <!-- Runs on install -->
     <sql>
       <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>

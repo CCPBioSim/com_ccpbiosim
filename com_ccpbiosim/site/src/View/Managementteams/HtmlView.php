@@ -6,7 +6,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Site\View\Managementteams;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\View\Managementteams;
 // No direct access
 defined('_JEXEC') or die;
 

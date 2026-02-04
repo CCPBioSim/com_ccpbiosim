@@ -5,12 +5,12 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Administrator\View\Coreteammembers;
+namespace Ccpbiosim\Component\Ccpbiosim\Administrator\View\Coreteammembers;
 // No direct access
 defined('_JEXEC') or die;
 
 use \Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
-use \Ccpbiosim\Component\Github\Administrator\Helper\CcpbiosimHelper;
+use \Ccpbiosim\Component\Ccpbiosim\Administrator\Helper\CcpbiosimHelper;
 use \Joomla\CMS\Toolbar\Toolbar;
 use \Joomla\CMS\Toolbar\ToolbarHelper;
 use \Joomla\CMS\Language\Text;

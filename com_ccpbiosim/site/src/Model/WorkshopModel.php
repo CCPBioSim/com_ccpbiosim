@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Site\Model;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\Model;
 // No direct access.
 defined('_JEXEC') or die;
 
@@ -17,7 +17,7 @@ use \Joomla\CMS\MVC\Model\ItemModel;
 use \Joomla\CMS\Helper\TagsHelper;
 use \Joomla\CMS\Object\CMSObject;
 use \Joomla\CMS\User\UserFactoryInterface;
-use \Ccpbiosim\Component\Github\Site\Helper\CcpbiosimHelper;
+use \Ccpbiosim\Component\Ccpbiosim\Site\Helper\CcpbiosimHelper;
 
 // ccpbiosim model.
 class WorkshopModel extends ItemModel

@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Site\Field;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\Field;
 
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die;

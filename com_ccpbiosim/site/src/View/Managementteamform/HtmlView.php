@@ -5,7 +5,7 @@
  * @copyright  2025 CCPBioSim Team
  * @license    MIT
  */
-namespace Ccpbiosim\Component\Github\Site\View\Managementteamform;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\View\Managementteamform;
 // No direct access
 defined('_JEXEC') or die;
 
