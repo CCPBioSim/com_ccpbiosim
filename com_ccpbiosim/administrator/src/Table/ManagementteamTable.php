@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Administrator\Table;
+namespace Ccpbiosim\Component\Ccpbiosim\Administrator\Table;
 // No direct access
 defined('_JEXEC') or die;
 
@@ -21,7 +21,7 @@ use \Joomla\Database\DatabaseDriver;
 use \Joomla\CMS\Filter\OutputFilter;
 use \Joomla\CMS\Filesystem\File;
 use \Joomla\Registry\Registry;
-use \Ccpbiosim\Component\Github\Administrator\Helper\CcpbiosimHelper;
+use \Ccpbiosim\Component\Ccpbiosim\Administrator\Helper\CcpbiosimHelper;
 use \Joomla\CMS\Helper\ContentHelper;
 
 

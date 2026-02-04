@@ -12,7 +12,7 @@ use \Joomla\CMS\Factory;
 use \Joomla\CMS\Uri\Uri;
 use \Joomla\CMS\Router\Route;
 use \Joomla\CMS\Language\Text;
-use \Ccpbiosim\Component\Github\Site\Helper\CcpbiosimHelper;
+use \Ccpbiosim\Component\Ccpbiosim\Site\Helper\CcpbiosimHelper;
 
 $wa = $this->document->getWebAssetManager();
 $wa->useScript('keepalive')

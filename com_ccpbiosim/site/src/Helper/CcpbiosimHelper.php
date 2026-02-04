@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Site\Helper;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\Helper;
 
 defined('_JEXEC') or die;
 

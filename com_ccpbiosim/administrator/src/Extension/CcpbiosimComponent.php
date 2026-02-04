@@ -5,11 +5,11 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Administrator\Extension;
+namespace Ccpbiosim\Component\Ccpbiosim\Administrator\Extension;
 
 defined('JPATH_PLATFORM') or die;
 
-use Ccpbiosim\Component\Github\Administrator\Service\Html\CCPBIOSIM;
+use Ccpbiosim\Component\Ccpbiosim\Administrator\Service\Html\CCPBIOSIM;
 use Joomla\CMS\Application\SiteApplication;
 use Joomla\CMS\Association\AssociationServiceInterface;
 use Joomla\CMS\Association\AssociationServiceTrait;

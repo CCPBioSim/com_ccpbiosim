@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Site\Model;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\Model;
 // No direct access.
 defined('_JEXEC') or die;
 
@@ -17,7 +17,7 @@ use \Joomla\CMS\Helper\TagsHelper;
 use \Joomla\CMS\Layout\FileLayout;
 use \Joomla\Database\ParameterType;
 use \Joomla\Utilities\ArrayHelper;
-use \Ccpbiosim\Component\Github\Site\Helper\CcpbiosimHelper;
+use \Ccpbiosim\Component\Ccpbiosim\Site\Helper\CcpbiosimHelper;
 
 
 /**

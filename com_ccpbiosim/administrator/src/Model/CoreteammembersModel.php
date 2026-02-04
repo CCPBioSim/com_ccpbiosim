@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Administrator\Model;
+namespace Ccpbiosim\Component\Ccpbiosim\Administrator\Model;
 // No direct access.
 defined('_JEXEC') or die;
 
@@ -16,7 +16,7 @@ use \Joomla\CMS\Language\Text;
 use \Joomla\CMS\Helper\TagsHelper;
 use \Joomla\Database\ParameterType;
 use \Joomla\Utilities\ArrayHelper;
-use Ccpbiosim\Component\Github\Administrator\Helper\CcpbiosimHelper;
+use Ccpbiosim\Component\Ccpbiosim\Administrator\Helper\CcpbiosimHelper;
 
 /**
  * Methods supporting a list of Coreteammembers records.

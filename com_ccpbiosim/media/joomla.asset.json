@@ -21,6 +21,11 @@
       }
     },
     {
+        "name": "com_ccpbiosim.list",
+        "type": "style",
+        "uri": "com_ccpbiosim/list.css"
+    },
+    {
         "name": "com_ccpbiosim.workshop",
         "type": "style",
         "uri": "com_ccpbiosim/workshop.css"

@@ -6,7 +6,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Site\View\Coreteammembers;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\View\Coreteammembers;
 // No direct access
 defined('_JEXEC') or die;
 

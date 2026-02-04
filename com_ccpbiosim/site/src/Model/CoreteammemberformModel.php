@@ -5,7 +5,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Site\Model;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\Model;
 // No direct access.
 defined('_JEXEC') or die;
 

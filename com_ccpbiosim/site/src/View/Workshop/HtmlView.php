@@ -6,7 +6,7 @@
  * @license    MIT
  */
 
-namespace Ccpbiosim\Component\Github\Site\View\Workshop;
+namespace Ccpbiosim\Component\Ccpbiosim\Site\View\Workshop;
 // No direct access
 defined('_JEXEC') or die;
 
