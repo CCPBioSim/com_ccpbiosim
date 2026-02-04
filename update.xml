@@ -17,6 +17,6 @@
     <php_minimum>8.2</php_minimum>
     <maintainer>CCPBioSim Dev Team</maintainer>
     <maintainerurl>https://www.ccpbiosim.ac.uk</maintainerurl>
-    <targetplatform name="joomla" version="6.[123456789]"/>
+    <targetplatform name="joomla" version="6.[0123456789]"/>
   </update>
 </updates>
