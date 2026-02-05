@@ -46,6 +46,8 @@
     <submenu>
       <menu link="option=com_ccpbiosim&amp;view=coreteammembers" view="coreteammembers" alt="Ccpbiosim/Coreteammembers">COM_CCPBIOSIM_TITLE_CORETEAMMEMBERS</menu>
       <menu link="option=com_ccpbiosim&amp;view=managementteams" view="managementteams" alt="Ccpbiosim/Managementteams">COM_CCPBIOSIM_TITLE_MANAGEMENTTEAMS</menu>
+      <menu link="option=com_ccpbiosim&amp;view=eventcategories" view="eventcategories" alt="Ccpbiosim/Eventcategories">COM_CCPBIOSIM_TITLE_EVENTCATEGORIES</menu>
+      <menu link="option=com_ccpbiosim&amp;view=events" view="events" alt="Ccpbiosim/Events">COM_CCPBIOSIM_TITLE_EVENTS</menu>
     </submenu>
     <files folder="administrator">
       <filename>access.xml</filename>

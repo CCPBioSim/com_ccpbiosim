@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @package    com_ccpbiosim
  * @copyright  2025 CCPBioSim Team
