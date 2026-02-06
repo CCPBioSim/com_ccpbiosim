@@ -1,0 +1,19 @@
+  .management-team-card-hover {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .management-team-card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
+  .management-team-social a {
+    color: #555;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+  }
+
+  .management-team-social a:hover {
+    color: #0d6efd;
+  }
