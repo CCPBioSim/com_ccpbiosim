@@ -44,6 +44,11 @@
         "name": "com_ccpbiosim.software",
         "type": "script",
         "uri": "com_ccpbiosim/software.js"
+    },
+    {
+        "name": "com_ccpbiosim.teams",
+        "type": "style",
+        "uri": "com_ccpbiosim/teams.css"
     }
   ]
 }
