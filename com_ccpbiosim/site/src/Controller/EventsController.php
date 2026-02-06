@@ -20,8 +20,6 @@ use Joomla\Utilities\ArrayHelper;
 
 /**
  * Events class.
- *
- * @since  0.0.1
  */
 class EventsController extends FormController
 {
@@ -33,8 +31,6 @@ class EventsController extends FormController
 	 * @param   array   $config  Configuration array for model. Optional
 	 *
 	 * @return  object	The model
-	 *
-	 * @since   0.0.1
 	 */
 	public function getModel($name = 'Events', $prefix = 'Site', $config = array())
 	{

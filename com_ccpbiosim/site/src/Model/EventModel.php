@@ -21,25 +21,16 @@ use \Ccpbiosim\Component\Ccpbiosim\Site\Helper\CcpbiosimHelper;
 
 /**
  * Ccpbiosim model.
- *
- * @since  0.0.1
  */
 class EventModel extends ItemModel
 {
 	public $_item;
-
-	
-
-	
-
 	/**
 	 * Method to auto-populate the model state.
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
 	 * @return  void
-	 *
-	 * @since   0.0.1
 	 *
 	 * @throws Exception
 	 */
@@ -240,8 +231,6 @@ class EventModel extends ItemModel
 	 * @param   integer $id The id of the row to check out.
 	 *
 	 * @return  boolean True on success, false on failure.
-	 *
-	 * @since   0.0.1
 	 */
 	public function checkin($id = null)
 	{
@@ -273,8 +262,6 @@ class EventModel extends ItemModel
 	 * @param   integer $id The id of the row to check out.
 	 *
 	 * @return  boolean True on success, false on failure.
-	 *
-	 * @since   0.0.1
 	 */
 	public function checkout($id = null)
 	{

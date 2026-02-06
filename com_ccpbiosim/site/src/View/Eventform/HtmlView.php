@@ -15,8 +15,6 @@ use \Joomla\CMS\Language\Text;
 
 /**
  * View class for a list of Ccpbiosim.
- *
- * @since  0.0.1
  */
 class HtmlView extends BaseHtmlView
 {

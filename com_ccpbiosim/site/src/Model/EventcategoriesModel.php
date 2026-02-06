@@ -22,8 +22,6 @@ use \Ccpbiosim\Component\Ccpbiosim\Site\Helper\CcpbiosimHelper;
 
 /**
  * Methods supporting a list of Ccpbiosim records.
- *
- * @since  0.0.1
  */
 class EventcategoriesModel extends ListModel
 {
@@ -33,7 +31,6 @@ class EventcategoriesModel extends ListModel
 	 * @param   array  $config  An optional associative array of configuration settings.
 	 *
 	 * @see    JController
-	 * @since  0.0.1
 	 */
 	public function __construct($config = array())
 	{
@@ -66,8 +63,6 @@ class EventcategoriesModel extends ListModel
 	 * @return  void
 	 *
 	 * @throws  Exception
-	 *
-	 * @since   0.0.1
 	 */
 	protected function populateState($ordering = null, $direction = null)
 	{
@@ -117,8 +112,6 @@ class EventcategoriesModel extends ListModel
 	 * Build an SQL query to load the list data.
 	 *
 	 * @return  DatabaseQuery
-	 *
-	 * @since   0.0.1
 	 */
 	protected function getListQuery()
 	{

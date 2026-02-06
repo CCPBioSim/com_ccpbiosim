@@ -21,8 +21,6 @@ use Joomla\CMS\MVC\Model\BaseDatabaseModel;
 
 /**
  * Event class.
- *
- * @since  0.0.1
  */
 class EventformController extends FormController
 {
@@ -30,8 +28,6 @@ class EventformController extends FormController
 	 * Method to check out an item for editing and redirect to the edit form.
 	 *
 	 * @return  void
-	 *
-	 * @since   0.0.1
 	 *
 	 * @throws  Exception
 	 */
@@ -69,7 +65,6 @@ class EventformController extends FormController
 	 * @return  void
 	 *
 	 * @throws  Exception
-	 * @since   0.0.1
 	 */
 	public function save($key = NULL, $urlVar = NULL)
 	{
@@ -211,8 +206,6 @@ class EventformController extends FormController
 	 * @return  void
 	 *
 	 * @throws  Exception
-	 *
-	 * @since   0.0.1
 	 */
 	public function remove()
 	{
@@ -262,8 +255,6 @@ class EventformController extends FormController
      * @param   array              $validData  The validated data.
      *
      * @return  void
-     *
-     * @since   1.6
      */
     protected function postSaveHook(BaseDatabaseModel $model, $validData = array())
     {

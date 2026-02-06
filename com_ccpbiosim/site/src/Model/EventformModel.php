@@ -19,25 +19,16 @@ use \Joomla\CMS\Helper\TagsHelper;
 
 /**
  * Ccpbiosim model.
- *
- * @since  0.0.1
  */
 class EventformModel extends FormModel
 {
 	private $item = null;
-
-	
-
-	
-
 	/**
 	 * Method to auto-populate the model state.
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
 	 * @return  void
-	 *
-	 * @since   0.0.1
 	 *
 	 * @throws  Exception
 	 */
@@ -179,8 +170,6 @@ class EventformModel extends FormModel
 	 * @param   integer $id The id of the row to check out.
 	 *
 	 * @return  boolean True on success, false on failure.
-	 *
-	 * @since   0.0.1
 	 */
 	public function checkin($id = null)
 	{
@@ -212,8 +201,6 @@ class EventformModel extends FormModel
 	 * @param   integer $id The id of the row to check out.
 	 *
 	 * @return  boolean True on success, false on failure.
-	 *
-	 * @since   0.0.1
 	 */
 	public function checkout($id = null)
 	{
@@ -251,8 +238,6 @@ class EventformModel extends FormModel
 	 * @param   boolean $loadData True if the form is to load its own data (default case), false if not.
 	 *
 	 * @return  Form    A Form object on success, false on failure
-	 *
-	 * @since   0.0.1
 	 */
 	public function getForm($data = array(), $loadData = true)
 	{
@@ -275,7 +260,6 @@ class EventformModel extends FormModel
 	 * Method to get the data that should be injected in the form.
 	 *
 	 * @return  array  The default data is an empty array.
-	 * @since   0.0.1
 	 */
 	protected function loadFormData()
 	{
@@ -318,7 +302,6 @@ class EventformModel extends FormModel
 	 * @return  bool
 	 *
 	 * @throws  Exception
-	 * @since   0.0.1
 	 */
 	public function save($data)
 	{
@@ -378,8 +361,6 @@ class EventformModel extends FormModel
 	 * @return  int  The id of the deleted item
 	 *
 	 * @throws  Exception
-	 *
-	 * @since   0.0.1
 	 */
 	public function delete($id)
 	{

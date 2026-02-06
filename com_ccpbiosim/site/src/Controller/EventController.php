@@ -20,8 +20,6 @@ use \Joomla\Utilities\ArrayHelper;
 
 /**
  * Event class.
- *
- * @since  1.6.0
  */
 class EventController extends BaseController
 {
@@ -29,8 +27,6 @@ class EventController extends BaseController
 	 * Method to check out an item for editing and redirect to the edit form.
 	 *
 	 * @return  void
-	 *
-	 * @since   0.0.1
 	 *
 	 * @throws  Exception
 	 */
@@ -68,7 +64,6 @@ class EventController extends BaseController
 	 * @return    void
 	 *
 	 * @throws  Exception
-	 * @since   0.0.1
 	 */
 	public function publish()
 	{
@@ -123,8 +118,6 @@ class EventController extends BaseController
 	 * Check in record
 	 *
 	 * @return  boolean  True on success
-	 *
-	 * @since   0.0.1
 	 */
 	public function checkin()
 	{
