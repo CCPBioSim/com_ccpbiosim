@@ -45,7 +45,8 @@ class HtmlView extends BaseHtmlView
 		$this->items = $this->get('Items');
 		$this->pagination = $this->get('Pagination');
 		$this->params = $app->getParams('com_ccpbiosim');
-		
+		$this->layout = $app->getInput()->get('_layout', 'default', 'STRING');
+                $this->setLayout($this->layout);		
 
 		// Check for errors.
 		if (count($errors = $this->get('Errors')))
