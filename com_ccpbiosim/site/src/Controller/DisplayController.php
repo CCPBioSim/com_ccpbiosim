@@ -16,8 +16,6 @@ use Joomla\CMS\MVC\Factory\MVCFactoryInterface;
 
 /**
  * Display Component Controller
- *
- * @since  1.0.0
  */
 class DisplayController extends \Joomla\CMS\MVC\Controller\BaseController
 {
@@ -30,8 +28,6 @@ class DisplayController extends \Joomla\CMS\MVC\Controller\BaseController
 	 * @param  MVCFactoryInterface  $factory  The factory.
 	 * @param  CMSApplication       $app      The JApplication for the dispatcher
 	 * @param  Input              $input    Input
-	 *
-	 * @since  1.0.0
 	 */
 	public function __construct($config = array(), MVCFactoryInterface $factory = null, $app = null, $input = null)
 	{
@@ -45,8 +41,6 @@ class DisplayController extends \Joomla\CMS\MVC\Controller\BaseController
 	 * @param   boolean  $urlparams  An array of safe URL parameters and their variable types, for valid values see {@link InputFilter::clean()}.
 	 *
 	 * @return  \Joomla\CMS\MVC\Controller\BaseController  This object to support chaining.
-	 *
-	 * @since   1.0.0
 	 */
 	public function display($cachable = false, $urlparams = false)
 	{

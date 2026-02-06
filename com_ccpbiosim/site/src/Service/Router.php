@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @package    com_ccpbiosim
  * @copyright  2025 CCPBioSim Team
@@ -67,6 +66,22 @@ class Router extends RouterView
 		$managementteamform = new RouterViewConfiguration('managementteamform');
 		$managementteamform->setKey('id');
 		$this->registerView($managementteamform);
+		$events = new RouterViewConfiguration('events');
+		$this->registerView($events);
+		$ccEvent = new RouterViewConfiguration('event');
+		$ccEvent->setKey('id')->setParent($events);
+		$this->registerView($ccEvent);
+		$eventform = new RouterViewConfiguration('eventform');
+		$eventform->setKey('id');
+		$this->registerView($eventform);
+		$eventcategories = new RouterViewConfiguration('eventcategories');
+		$this->registerView($eventcategories);
+		$ccEventcategory = new RouterViewConfiguration('eventcategory');
+		$ccEventcategory->setKey('id')->setParent($eventcategories);
+		$this->registerView($ccEventcategory);
+		$eventcategoryform = new RouterViewConfiguration('eventcategoryform');
+		$eventcategoryform->setKey('id');
+		$this->registerView($eventcategoryform);
 
 		parent::__construct($app, $menu);
 
@@ -177,6 +192,110 @@ class Router extends RouterView
 	public function getManagementteamformId($segment, $query)
 	{
 		return $this->getManagementteamId($segment, $query);
+	}
+
+	/**
+	* Method to get the segment(s) for an eventcategory
+	*
+	* @param   string  $id     ID of the eventcategory to retrieve the segments for
+	* @param   array   $query  The request that is built right now
+	*
+	* @return  array|string  The segments of this item
+	*/
+	public function getEventcategorySegment($id, $query)
+	{
+		return array((int) $id => $id);
+	}
+
+	/**
+	* Method to get the segment(s) for an eventcategoryform
+	*
+	* @param   string  $id     ID of the eventcategoryform to retrieve the segments for
+	* @param   array   $query  The request that is built right now
+	*
+	* @return  array|string  The segments of this item
+	*/
+	public function getEventcategoryformSegment($id, $query)
+	{
+		return $this->getEventcategorySegment($id, $query);
+	}
+
+	/**
+	* Method to get the segment(s) for an eventcategory
+	*
+	* @param   string  $segment  Segment of the eventcategory to retrieve the ID for
+	* @param   array   $query    The request that is parsed right now
+	*
+	* @return  mixed   The id of this item or false
+	*/
+	public function getEventcategoryId($segment, $query)
+	{
+	 	return (int) $segment;
+	}
+
+	/**
+	* Method to get the segment(s) for an eventcategoryform
+	*
+	* @param   string  $segment  Segment of the eventcategoryform to retrieve the ID for
+	* @param   array   $query    The request that is parsed right now
+	*
+	* @return  mixed   The id of this item or false
+	*/
+	public function getEventcategoryformId($segment, $query)
+	{
+		return $this->getEventcategoryId($segment, $query);
+	}
+
+	/**
+	* Method to get the segment(s) for an event
+	*
+	* @param   string  $id     ID of the event to retrieve the segments for
+	* @param   array   $query  The request that is built right now
+	*
+	* @return  array|string  The segments of this item
+	*/
+	public function getEventSegment($id, $query)
+	{
+		return array((int) $id => $id);
+	}
+
+	/**
+	* Method to get the segment(s) for an eventform
+	*
+	* @param   string  $id     ID of the eventform to retrieve the segments for
+	* @param   array   $query  The request that is built right now
+	*
+	* @return  array|string  The segments of this item
+	*/
+	public function getEventformSegment($id, $query)
+	{
+		return $this->getEventSegment($id, $query);
+	}
+
+	/**
+	* Method to get the segment(s) for an event
+	*
+	* @param   string  $segment  Segment of the event to retrieve the ID for
+	* @param   array   $query    The request that is parsed right now
+	*
+	* @return  mixed   The id of this item or false
+	*/
+	public function getEventId($segment, $query)
+	{
+		return (int) $segment;
+	}
+
+	/**
+	* Method to get the segment(s) for an eventform
+	*
+	* @param   string  $segment  Segment of the eventform to retrieve the ID for
+	* @param   array   $query    The request that is parsed right now
+	*
+	* @return  mixed   The id of this item or false
+	*/
+	public function getEventformId($segment, $query)
+	{
+		return $this->getEventId($segment, $query);
 	}
 
 	/**

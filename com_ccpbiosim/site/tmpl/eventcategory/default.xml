@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_CCPBIOSIM_TITLE_ITEM_VIEW_EVENTCATEGORY" option="View">
+        <message>
+                        <![CDATA[COM_CCPBIOSIM_TITLE_ITEM_VIEW_EVENTCATEGORY_DESC]]>
+        </message>
+    </layout>
+    <fields name="request">
+        <fieldset 
+            name="request"
+            label="COM_CCPBIOSIM_FIELDSET_ITEM_ID_SELECT_LABEL">
+            <field
+                name="id"
+                query="SELECT `id`, `eventcategory` FROM #__ccpbiosim_event_categories ORDER BY `id`"
+                type="sql"
+                key_field="id" 
+                value_field="eventcategory"
+                label="COM_CCPBIOSIM_ITEM_ID_SELECT_LABEL"
+                require="true"
+                description="JGLOBAL_SHOW_TITLE_DESC">
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

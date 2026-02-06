@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Ccpbiosim\Component\Ccpbiosim\Administrator\Field">
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="ordering"/>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="JGLOBAL_FIELD_CREATED_BY_LABEL" description="JGLOBAL_FIELD_CREATED_BY_DESC" hidden="true" hint="COM_CCPBIOSIM_FORM_LBL_EVENT_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="JGLOBAL_FIELD_MODIFIED_BY_LABEL" description="JGLOBAL_FIELD_MODIFIED_BY_DESC" hidden="true" hint="COM_CCPBIOSIM_FORM_LBL_EVENT_MODIFIED_BY"/>
+    <field name="title" filter="safehtml" type="text" required="true" label="JGLOBAL_TITLE" description="COM_CCPBIOSIM_FORM_DESC_EVENT_TITLE" hint="Add a title for this event"/>
+    <field name="category" query="SELECT * FROM #__ccpbiosim_event_categories" key_field="id" value_field="eventcategory" header="Event Category" type="sql" layout="joomla.form.field.list-fancy-select" required="true" label="COM_CCPBIOSIM_FORM_LBL_EVENT_CATEGORY" description="COM_CCPBIOSIM_FORM_DESC_EVENT_CATEGORY" hint="COM_CCPBIOSIM_FORM_LBL_EVENT_CATEGORY"/>
+    <field name="startdatetime" type="calendar" class="inputbox" format="%Y-%m-%d %H:%M:%S" showtime="true" translateformat="true" required="true" label="COM_CCPBIOSIM_FORM_LBL_EVENT_STARTDATETIME" description="COM_CCPBIOSIM_FORM_DESC_EVENT_STARTDATETIME" hint="COM_CCPBIOSIM_FORM_LBL_EVENT_STARTDATETIME"/>
+    <field name="enddatetime" type="calendar" class="inputbox" format="%Y-%m-%d %H:%M:%S" showtime="true" translateformat="true" required="true" label="COM_CCPBIOSIM_FORM_LBL_EVENT_ENDDATETIME" description="COM_CCPBIOSIM_FORM_DESC_EVENT_ENDDATETIME" hint="COM_CCPBIOSIM_FORM_LBL_EVENT_ENDDATETIME"/>
+    <field name="eventdetails" editor="|" buttons="true" filter="\Joomla\CMS\Component\ComponentHelper::filterText" type="editor" required="true" label="COM_CCPBIOSIM_FORM_LBL_EVENT_EVENTDETAILS" description="COM_CCPBIOSIM_FORM_DESC_EVENT_EVENTDETAILS" hint="COM_CCPBIOSIM_FORM_LBL_EVENT_EVENTDETAILS"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

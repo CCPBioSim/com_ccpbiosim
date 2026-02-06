@@ -24,6 +24,32 @@
 .color-box-managementteams { 
       float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
 
+.icon-48-eventcategories {
+      background-image: url(../images/l_eventcategories.png);
+      padding-left:60px!important;
+}
+
+.icon-48-eventcategory {
+      background-image: url(../images/l_eventcategories.png);
+      padding-left:60px!important;
+}
+
+.color-box-eventcategories { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
+.icon-48-events {
+      background-image: url(../images/l_events.png);
+      padding-left:60px!important;
+}
+
+.icon-48-event {
+      background-image: url(../images/l_events.png);
+      padding-left:60px!important;
+}
+
+.color-box-events { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
 .other-filters{
     padding: 0 14px;
 }
