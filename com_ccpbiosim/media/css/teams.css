@@ -1,19 +1,137 @@
-  .management-team-card-hover {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+/* -------- Management Team ------- */
+
+.management-team-card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.management-team-card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.management-team-social a {
+  color: #555;
+  margin: 0 8px;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.management-team-social a:hover {
+  color: #0d6efd;
+}
+
+/* -------- Core Team ------- */
+/* ---------- Card ---------- */
+
+.core-team-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.35rem;
+  padding: 1.75rem;
+  background: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+
+.core-team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(15, 23, 42, 0.08);
+}
+
+.core-team-horizontal {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Image ---------- */
+
+.core-team-image-wrap {
+  position: relative;
+  /*width: 120px;*/
+  /*min-width: 120px;*/
+  height: 250px;
+  border-radius: 0.35rem;
+  overflow: hidden;
+}
+
+.core-team-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.core-team-image-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 90%
+  );
+  pointer-events: none;
+}
+
+/* ---------- Text ---------- */
+
+.core-team-content {
+  margin-left: 1.5rem;
+  flex: 1;
+}
+
+.core-team-name {
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.core-team-role {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.core-team-institution {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.75rem;
+}
+
+.core-team-bio {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* ---------- Animation ---------- */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 575px) {
+  .core-team-horizontal {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .management-team-card-hover:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  .core-team-content {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 
-  .management-team-social a {
-    color: #555;
-    margin: 0 8px;
-    font-size: 1.2rem;
-    transition: color 0.2s ease;
+  .core-team-image-wrap::after {
+    display: none;
   }
-
-  .management-team-social a:hover {
-    color: #0d6efd;
-  }
+}
