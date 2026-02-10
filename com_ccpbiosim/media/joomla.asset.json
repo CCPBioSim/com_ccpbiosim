@@ -49,6 +49,11 @@
         "name": "com_ccpbiosim.teams",
         "type": "style",
         "uri": "com_ccpbiosim/teams.css"
+    },
+    {
+        "name": "com_ccpbiosim.teams",
+        "type": "script",
+        "uri": "com_ccpbiosim/teams.js"
     }
   ]
 }

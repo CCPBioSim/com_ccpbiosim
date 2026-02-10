@@ -31,11 +31,9 @@ $canDelete  = $user->authorise('core.delete', 'com_ccpbiosim');
 
 // Import CSS
 $wa = $this->document->getWebAssetManager();
-$wa->useStyle('com_ccpbiosim.list');
+$wa->useStyle('com_ccpbiosim.teams')
+   ->useScript('com_ccpbiosim.teams');
 ?>
-
-<link rel="stylesheet" href="media/com_ccpbiosim/css/teams.css">
-
 <?php if ($this->params->get('show_page_heading')) : ?>
     <div class="page-header">
         <h1> <?php echo $this->escape($this->params->get('page_heading')); ?> </h1>
@@ -43,17 +41,13 @@ $wa->useStyle('com_ccpbiosim.list');
 <?php endif;?>
 <p>Our core team is made up of our chair, administrative support from the chairs institution and CoSeC support staff from UKRI - STFC.</br></p>
 
-<!-- Team -->
-<section class="pb-5">
-  <div class="container container-md">
-    <div class="row g-4">
-
+<div class="container container-md">
+  <div class="row g-4">
     <?php foreach ($this->items as $i => $item) : ?>
       <?php $canEdit = $user->authorise('core.edit', 'com_ccpbiosim'); ?>
       <?php if (!$canEdit && $user->authorise('core.edit.own', 'com_ccpbiosim')): ?>
         <?php $canEdit = Factory::getApplication()->getIdentity()->id == $item->created_by; ?>
       <?php endif; ?>
-
       <div class="col-12 col-md-6 fade-up">
         <div class="core-team-card core-team-horizontal">
           <div class="core-team-image-wrap">
@@ -66,18 +60,6 @@ $wa->useStyle('com_ccpbiosim.list');
           </div>
         </div>
       </div>
-
     <?php endforeach; ?>
-
-    </div>
   </div>
-</section>
-
-<!-- Animation Script -->
-<script>
-  window.addEventListener('load', () => {
-    document.querySelectorAll('.fade-up').forEach((el, i) => {
-      setTimeout(() => el.classList.add('show'), i * 120);
-    });
-  });
-</script>
+</div>

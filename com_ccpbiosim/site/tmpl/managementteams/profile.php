@@ -31,10 +31,10 @@ $canDelete  = $user->authorise('core.delete', 'com_ccpbiosim');
 
 // Import CSS
 $wa = $this->document->getWebAssetManager();
-$wa->useStyle('com_ccpbiosim.list');
+$wa->useStyle('com_ccpbiosim.teams')
+   ->useScript('com_ccpbiosim.teams');
 ?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="media/com_ccpbiosim/css/teams.css">
 
 <?php if ($this->params->get('show_page_heading')) : ?>
     <div class="page-header">
@@ -45,14 +45,12 @@ $wa->useStyle('com_ccpbiosim.list');
 
 <div class="container my-5">
   <div class="row g-4">
-
     <?php foreach ($this->items as $i => $item) : ?>
       <?php $canEdit = $user->authorise('core.edit', 'com_ccpbiosim'); ?>
       <?php if (!$canEdit && $user->authorise('core.edit.own', 'com_ccpbiosim')): ?>
         <?php $canEdit = Factory::getApplication()->getIdentity()->id == $item->created_by; ?>
       <?php endif; ?>
-
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 fade-up">
           <div class="card h-100 text-center shadow-sm management-team-card-hover">
             <img src="<?php echo Uri::root() . $item->profilephoto; ?>" alt="Profile Photo"
                  class="rounded-circle mx-auto mt-4"
@@ -69,8 +67,6 @@ $wa->useStyle('com_ccpbiosim.list');
             </div>
           </div>
         </div>
-
     <?php endforeach; ?>
-
   </div>
 </div>
