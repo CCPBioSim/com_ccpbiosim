@@ -31,10 +31,10 @@ $canDelete  = $user->authorise('core.delete', 'com_ccpbiosim');
 
 // Import CSS
 $wa = $this->document->getWebAssetManager();
-$wa->useStyle('com_ccpbiosim.list');
+$wa->useStyle('com_ccpbiosim.teams')
+   ->useScript('com_ccpbiosim.teams');
 ?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="media/com_ccpbiosim/css/teams.css">
 
 <?php if ($this->params->get('show_page_heading')) : ?>
     <div class="page-header">
@@ -52,7 +52,7 @@ $wa->useStyle('com_ccpbiosim.list');
         <?php $canEdit = Factory::getApplication()->getIdentity()->id == $item->created_by; ?>
       <?php endif; ?>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 fade-up">
           <div class="card h-100 text-center shadow-sm management-team-card-hover">
             <img src="<?php echo Uri::root() . $item->profilephoto; ?>" alt="Profile Photo"
                  class="rounded-circle mx-auto mt-4"

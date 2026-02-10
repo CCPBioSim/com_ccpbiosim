@@ -1,5 +1,5 @@
 /* -------- Management Team ------- */
-
+/* -------------- Card ------------ */
 .management-team-card-hover {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -8,6 +8,8 @@
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
+/* ------------ Social ----------- */
 
 .management-team-social a {
   color: #555;

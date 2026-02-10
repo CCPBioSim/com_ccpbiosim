@@ -31,11 +31,9 @@ $canDelete  = $user->authorise('core.delete', 'com_ccpbiosim');
 
 // Import CSS
 $wa = $this->document->getWebAssetManager();
-$wa->useStyle('com_ccpbiosim.list');
+$wa->useStyle('com_ccpbiosim.teams')
+   ->useScript('com_ccpbiosim.teams');
 ?>
-
-<link rel="stylesheet" href="media/com_ccpbiosim/css/teams.css">
-
 <?php if ($this->params->get('show_page_heading')) : ?>
     <div class="page-header">
         <h1> <?php echo $this->escape($this->params->get('page_heading')); ?> </h1>
@@ -72,12 +70,3 @@ $wa->useStyle('com_ccpbiosim.list');
     </div>
   </div>
 </section>
-
-<!-- Animation Script -->
-<script>
-  window.addEventListener('load', () => {
-    document.querySelectorAll('.fade-up').forEach((el, i) => {
-      setTimeout(() => el.classList.add('show'), i * 120);
-    });
-  });
-</script>
