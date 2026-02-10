@@ -41,17 +41,13 @@ $wa->useStyle('com_ccpbiosim.teams')
 <?php endif;?>
 <p>Our core team is made up of our chair, administrative support from the chairs institution and CoSeC support staff from UKRI - STFC.</br></p>
 
-<!-- Team -->
-<section class="pb-5">
-  <div class="container container-md">
-    <div class="row g-4">
-
+<div class="container container-md">
+  <div class="row g-4">
     <?php foreach ($this->items as $i => $item) : ?>
       <?php $canEdit = $user->authorise('core.edit', 'com_ccpbiosim'); ?>
       <?php if (!$canEdit && $user->authorise('core.edit.own', 'com_ccpbiosim')): ?>
         <?php $canEdit = Factory::getApplication()->getIdentity()->id == $item->created_by; ?>
       <?php endif; ?>
-
       <div class="col-12 col-md-6 fade-up">
         <div class="core-team-card core-team-horizontal">
           <div class="core-team-image-wrap">
@@ -64,9 +60,6 @@ $wa->useStyle('com_ccpbiosim.teams')
           </div>
         </div>
       </div>
-
     <?php endforeach; ?>
-
-    </div>
   </div>
-</section>
+</div>

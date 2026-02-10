@@ -45,13 +45,11 @@ $wa->useStyle('com_ccpbiosim.teams')
 
 <div class="container my-5">
   <div class="row g-4">
-
     <?php foreach ($this->items as $i => $item) : ?>
       <?php $canEdit = $user->authorise('core.edit', 'com_ccpbiosim'); ?>
       <?php if (!$canEdit && $user->authorise('core.edit.own', 'com_ccpbiosim')): ?>
         <?php $canEdit = Factory::getApplication()->getIdentity()->id == $item->created_by; ?>
       <?php endif; ?>
-
         <div class="col-md-6 col-lg-4 fade-up">
           <div class="card h-100 text-center shadow-sm management-team-card-hover">
             <img src="<?php echo Uri::root() . $item->profilephoto; ?>" alt="Profile Photo"
@@ -69,8 +67,6 @@ $wa->useStyle('com_ccpbiosim.teams')
             </div>
           </div>
         </div>
-
     <?php endforeach; ?>
-
   </div>
 </div>
