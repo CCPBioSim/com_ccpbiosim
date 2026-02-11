@@ -4,12 +4,12 @@
     <description>A Joomla component for custom CCPBioSim features.</description>
     <element>com_ccpbiosim</element>
     <type>component</type>
-    <version>v0.1.2</version>
+    <version>v0.1.3</version>
     <infourl title="CCPBioSim">
             https://github.com/ccpbiosim/com_ccpbiosim
         </infourl>
     <downloads>
-      <downloadurl type="full" format="zip">https://github.com/ccpbiosim/com_ccpbiosim/releases/download/0.1.2/com_ccpbiosim-0.1.2.zip</downloadurl>
+      <downloadurl type="full" format="zip">https://github.com/ccpbiosim/com_ccpbiosim/releases/download/0.1.3/com_ccpbiosim-0.1.3.zip</downloadurl>
     </downloads>
     <tags>
       <tag>stable</tag>
