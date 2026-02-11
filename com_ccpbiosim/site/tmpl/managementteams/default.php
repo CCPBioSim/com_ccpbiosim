@@ -29,9 +29,10 @@ $canCheckin = $user->authorise('core.manage', 'com_ccpbiosim');
 $canChange  = $user->authorise('core.edit.state', 'com_ccpbiosim');
 $canDelete  = $user->authorise('core.delete', 'com_ccpbiosim');
 
-// Import CSS
+// Import CSS & JS
 $wa = $this->document->getWebAssetManager();
-$wa->useStyle('com_ccpbiosim.list');
+$wa->useStyle('com_ccpbiosim.site')
+   ->useScript('com_ccpbiosim.site');
 ?>
 
 <?php if ($this->params->get('show_page_heading')) : ?>

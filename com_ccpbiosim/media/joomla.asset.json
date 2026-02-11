@@ -21,39 +21,14 @@
       }
     },
     {
-        "name": "com_ccpbiosim.list",
+        "name": "com_ccpbiosim.site",
         "type": "style",
-        "uri": "com_ccpbiosim/list.css"
+        "uri": "com_ccpbiosim/site.css"
     },
     {
-        "name": "com_ccpbiosim.workshop",
-        "type": "style",
-        "uri": "com_ccpbiosim/workshop.css"
-    },
-    {
-        "name": "com_ccpbiosim.workshop",
+        "name": "com_ccpbiosim.site",
         "type": "script",
-        "uri": "com_ccpbiosim/workshop.js"
-    },
-    {
-        "name": "com_ccpbiosim.software",
-        "type": "style",
-        "uri": "com_ccpbiosim/software.css"
-    },
-    {
-        "name": "com_ccpbiosim.software",
-        "type": "script",
-        "uri": "com_ccpbiosim/software.js"
-    },
-    {
-        "name": "com_ccpbiosim.teams",
-        "type": "style",
-        "uri": "com_ccpbiosim/teams.css"
-    },
-    {
-        "name": "com_ccpbiosim.teams",
-        "type": "script",
-        "uri": "com_ccpbiosim/teams.js"
+        "uri": "com_ccpbiosim/site.js"
     }
   ]
 }
