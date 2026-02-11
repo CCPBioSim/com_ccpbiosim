@@ -41,13 +41,7 @@ $wa->useStyle('com_ccpbiosim.site')
         <h1> <?php echo $this->escape($this->params->get('page_heading')); ?> </h1>
     </div>
 <?php endif;?>
-
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-
+<p>Below are upcoming events relevant to our community.</p>
   <style>
     /* Calendar-style date boxes */
     .event-date {
@@ -76,17 +70,6 @@ $wa->useStyle('com_ccpbiosim.site')
       font-size: 0.8rem;
     }
   </style>
-</head>
-
-<body class="bg-light">
-
-  <!-- Header -->
-  <header class="py-4 bg-white shadow-sm">
-    <div class="container">
-      <h1 class="fw-bold text-center">Events</h1>
-      <p class="text-center text-muted mb-0">Conferences, Webinars & Workshops</p>
-    </div>
-  </header>
 
   <!-- Main Content -->
   <main class="container my-5">
@@ -220,15 +203,7 @@ $wa->useStyle('com_ccpbiosim.site')
       </div>
 
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="text-center py-4 text-muted">
-    © 2026 Event Platform
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
