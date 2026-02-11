@@ -52,25 +52,16 @@ class Router extends RouterView
 		$this->categoryFactory = $categoryFactory;
 		
 		# Register views
-		$software = new RouterViewConfiguration('software');
-		$this->registerView($software);
-		$workshop = new RouterViewConfiguration('workshop');
-		$this->registerView($workshop);
 		$coreteammembers = new RouterViewConfiguration('coreteammembers');
 		$this->registerView($coreteammembers);
 		$coreteammemberform = new RouterViewConfiguration('coreteammemberform');
 		$coreteammemberform->setKey('id');
 		$this->registerView($coreteammemberform);
-		$managementteams = new RouterViewConfiguration('managementteams');
-		$this->registerView($managementteams);
-		$managementteamform = new RouterViewConfiguration('managementteamform');
-		$managementteamform->setKey('id');
-		$this->registerView($managementteamform);
-		$events = new RouterViewConfiguration('events');
-		$this->registerView($events);
 		$ccEvent = new RouterViewConfiguration('event');
 		$ccEvent->setKey('id')->setParent($events);
 		$this->registerView($ccEvent);
+		$events = new RouterViewConfiguration('events');
+		$this->registerView($events);
 		$eventform = new RouterViewConfiguration('eventform');
 		$eventform->setKey('id');
 		$this->registerView($eventform);
@@ -82,6 +73,17 @@ class Router extends RouterView
 		$eventcategoryform = new RouterViewConfiguration('eventcategoryform');
 		$eventcategoryform->setKey('id');
 		$this->registerView($eventcategoryform);
+                $managementteams = new RouterViewConfiguration('managementteams');
+		$this->registerView($managementteams);
+		$managementteamform = new RouterViewConfiguration('managementteamform');
+		$managementteamform->setKey('id');
+		$this->registerView($managementteamform);
+		$ourcommunity = new RouterViewConfiguration('ourcommunity');
+		$this->registerView($ourcommunity);
+                $software = new RouterViewConfiguration('software');
+		$this->registerView($software);
+		$workshop = new RouterViewConfiguration('workshop');
+		$this->registerView($workshop);
 
 		parent::__construct($app, $menu);
 
