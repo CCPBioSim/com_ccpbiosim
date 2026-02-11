@@ -57,11 +57,11 @@ class Router extends RouterView
 		$coreteammemberform = new RouterViewConfiguration('coreteammemberform');
 		$coreteammemberform->setKey('id');
 		$this->registerView($coreteammemberform);
+		$events = new RouterViewConfiguration('events');
+		$this->registerView($events);
 		$ccEvent = new RouterViewConfiguration('event');
 		$ccEvent->setKey('id')->setParent($events);
 		$this->registerView($ccEvent);
-		$events = new RouterViewConfiguration('events');
-		$this->registerView($events);
 		$eventform = new RouterViewConfiguration('eventform');
 		$eventform->setKey('id');
 		$this->registerView($eventform);
