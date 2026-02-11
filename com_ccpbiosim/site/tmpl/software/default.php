@@ -17,11 +17,11 @@ use \Joomla\CMS\Session\Session;
 use Joomla\Utilities\ArrayHelper;
 
 $params = $this->item->params;
+// Import CSS & JS
+$wa = $this->document->getWebAssetManager();
+$wa->useStyle('com_ccpbiosim.site')
+   ->useScript('com_ccpbiosim.site');
 ?>
-
-<link rel="stylesheet" href="media/com_ccpbiosim/css/software.css">
-<script src="media/com_ccpbiosim/js/software.js" type="text/javascript"></script>
-
 <?php if ($this->params->get('show_page_heading')) : ?>
     <div class="page-header">
         <h1> <?php echo $this->escape($this->params->get('page_heading')); ?> </h1>

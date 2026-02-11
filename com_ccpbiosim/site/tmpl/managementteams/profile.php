@@ -29,10 +29,10 @@ $canCheckin = $user->authorise('core.manage', 'com_ccpbiosim');
 $canChange  = $user->authorise('core.edit.state', 'com_ccpbiosim');
 $canDelete  = $user->authorise('core.delete', 'com_ccpbiosim');
 
-// Import CSS
+// Import CSS & JS
 $wa = $this->document->getWebAssetManager();
-$wa->useStyle('com_ccpbiosim.teams')
-   ->useScript('com_ccpbiosim.teams');
+$wa->useStyle('com_ccpbiosim.site')
+   ->useScript('com_ccpbiosim.site');
 ?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
