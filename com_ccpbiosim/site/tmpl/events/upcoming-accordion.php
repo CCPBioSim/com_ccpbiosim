@@ -42,7 +42,12 @@ $wa->useStyle('com_ccpbiosim.site')
     </div>
 <?php endif;?>
 <p>Below are upcoming events relevant to our community.</p>
-
+<?php if ($canCreate) : ?>
+  <a href="<?php echo Route::_('index.php?option=com_ccpbiosim&task=eventform.edit&id=0', false, 0); ?>"
+     class="btn btn-success btn-small"><i
+     class="icon-plus"></i>
+     <?php echo Text::_('COM_CCPBIOSIM_ADD_ITEM'); ?></a>
+<?php endif; ?>
 <!-- Main Content -->
 <div class="container my-5">
   <div class="accordion" id="eventsAccordion">
@@ -61,9 +66,15 @@ $wa->useStyle('com_ccpbiosim.site')
                 <a href="<?php echo Route::_('index.php?option=com_ccpbiosim&view=event&id='.(int) $item->id); ?>"
                    class="list-group-item list-group-item-action d-flex align-items-start gap-3">
                   <div class="events-date bg-success text-white">
-                    <div class="month">Apr</div>
-                    <div class="day">2</div>
-                    <div class="year">2026</div>
+                    <div class="month"><?php echo Factory::getDate($item->startdatetime)->format("M"); ?></div>
+                    <div class="day">
+                      <?php if (Factory::getDate($item->startdatetime)->__get("day") == Factory::getDate($item->enddatetime)->__get("day")): ?>
+                        <?php echo Factory::getDate($item->startdatetime)->__get("day"); ?>
+                      <?php else: ?>
+                        <?php echo Factory::getDate($item->startdatetime)->__get("day"); ?>-<?php echo Factory::getDate($item->enddatetime)->__get("day"); ?>
+                      <?php endif; ?>
+                    </div>
+                    <div class="year"><?php echo Factory::getDate($item->startdatetime)->__get("year"); ?></div>
                   </div>
                   <div>
                     <h6 class="mb-1"><?php echo $this->escape($item->title); ?></h6>
@@ -92,9 +103,15 @@ $wa->useStyle('com_ccpbiosim.site')
                 <a href="<?php echo Route::_('index.php?option=com_ccpbiosim&view=event&id='.(int) $item->id); ?>"
                    class="list-group-item list-group-item-action d-flex align-items-start gap-3">
                   <div class="events-date bg-primary text-white">
-                    <div class="month">Apr</div>
-                    <div class="day">2</div>
-                    <div class="year">2026</div>
+                    <div class="month"><?php echo Factory::getDate($item->startdatetime)->format("M"); ?></div>
+                    <div class="day">
+                      <?php if (Factory::getDate($item->startdatetime)->__get("day") == Factory::getDate($item->enddatetime)->__get("day")): ?>
+                        <?php echo Factory::getDate($item->startdatetime)->__get("day"); ?>
+                      <?php else: ?>
+                        <?php echo Factory::getDate($item->startdatetime)->__get("day"); ?>-<?php echo Factory::getDate($item->enddatetime)->__get("day"); ?>
+                      <?php endif; ?>
+                    </div>
+                    <div class="year"><?php echo Factory::getDate($item->startdatetime)->__get("year"); ?></div>
                   </div>
                   <div>
                     <h6 class="mb-1"><?php echo $this->escape($item->title); ?></h6>
@@ -123,9 +140,15 @@ $wa->useStyle('com_ccpbiosim.site')
                 <a href="<?php echo Route::_('index.php?option=com_ccpbiosim&view=event&id='.(int) $item->id); ?>"
                    class="list-group-item list-group-item-action d-flex align-items-start gap-3">
                   <div class="events-date bg-warning text-white">
-                    <div class="month">Apr</div>
-                    <div class="day">2</div>
-                    <div class="year">2026</div>
+                    <div class="month"><?php echo Factory::getDate($item->startdatetime)->format("M"); ?></div>
+                    <div class="day">
+                      <?php if (Factory::getDate($item->startdatetime)->__get("day") == Factory::getDate($item->enddatetime)->__get("day")): ?>
+                        <?php echo Factory::getDate($item->startdatetime)->__get("day"); ?>
+                      <?php else: ?>
+                        <?php echo Factory::getDate($item->startdatetime)->__get("day"); ?>-<?php echo Factory::getDate($item->enddatetime)->__get("day"); ?>
+                      <?php endif; ?>
+                    </div>
+                    <div class="year"><?php echo Factory::getDate($item->startdatetime)->__get("year"); ?></div>
                   </div>
                   <div>
                     <h6 class="mb-1"><?php echo $this->escape($item->title); ?></h6>
