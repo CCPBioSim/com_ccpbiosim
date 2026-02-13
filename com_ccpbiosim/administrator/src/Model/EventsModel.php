@@ -45,6 +45,11 @@ class EventsModel extends ListModel
 				'startdatetime', 'a.startdatetime',
 				'enddatetime', 'a.enddatetime',
 				'eventdetails', 'a.eventdetails',
+				'location', 'a.location',
+				'shortdesc', 'a.shortdesc',
+				'youtube', 'a.youtube',
+				'postevent', 'a.postevent',
+				'shorturl', 'a.shorturl',
 			);
 		}
 
