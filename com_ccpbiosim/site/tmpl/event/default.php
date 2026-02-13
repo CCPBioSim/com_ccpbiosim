@@ -58,6 +58,31 @@ if (!$canEdit && Factory::getApplication()->getIdentity()->authorise('core.edit.
 			<td><?php echo nl2br($this->item->eventdetails); ?></td>
 		</tr>
 
+		<tr>
+			<th><?php echo Text::_('COM_CCPBIOSIM_FORM_LBL_EVENT_LOCATION'); ?></th>
+			<td><?php echo $this->item->location; ?></td>
+		</tr>
+
+		<tr>
+			<th><?php echo Text::_('COM_CCPBIOSIM_FORM_LBL_EVENT_SHORTDESC'); ?></th>
+			<td><?php echo $this->item->shortdesc; ?></td>
+		</tr>
+
+		<tr>
+			<th><?php echo Text::_('COM_CCPBIOSIM_FORM_LBL_EVENT_YOUTUBE'); ?></th>
+			<td><?php echo $this->item->youtube; ?></td>
+		</tr>
+
+		<tr>
+			<th><?php echo Text::_('COM_CCPBIOSIM_FORM_LBL_EVENT_POSTEVENT'); ?></th>
+			<td><?php echo nl2br($this->item->postevent); ?></td>
+		</tr>
+
+		<tr>
+			<th><?php echo Text::_('COM_CCPBIOSIM_FORM_LBL_EVENT_SHORTURL'); ?></th>
+			<td><?php echo $this->item->shorturl; ?></td>
+		</tr>
+
 	</table>
 
 </div>

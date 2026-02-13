@@ -4,7 +4,6 @@
  * @copyright  2025 CCPBioSim Team
  * @license    MIT
  */
-
 // No direct access
 defined('_JEXEC') or die;
 
@@ -30,10 +29,9 @@ $canCheckin = $user->authorise('core.manage', 'com_ccpbiosim');
 $canChange  = $user->authorise('core.edit.state', 'com_ccpbiosim');
 $canDelete  = $user->authorise('core.delete', 'com_ccpbiosim');
 
-// Import CSS & JS
+// Import CSS
 $wa = $this->document->getWebAssetManager();
-$wa->useStyle('com_ccpbiosim.site')
-   ->useScript('com_ccpbiosim.site');
+$wa->useStyle('com_ccpbiosim.list');
 ?>
 
 <?php if ($this->params->get('show_page_heading')) : ?>
@@ -62,6 +60,10 @@ $wa->useStyle('com_ccpbiosim.site')
 					</th>
 
 					<th class=''>
+						<?php echo HTMLHelper::_('grid.sort',  'COM_CCPBIOSIM_EVENTS_SHORTURL', 'a.shorturl', $listDirn, $listOrder); ?>
+					</th>
+
+					<th class=''>
 						<?php echo HTMLHelper::_('grid.sort',  'COM_CCPBIOSIM_EVENTS_CATEGORY', 'a.category', $listDirn, $listOrder); ?>
 					</th>
 
@@ -71,6 +73,22 @@ $wa->useStyle('com_ccpbiosim.site')
 
 					<th class=''>
 						<?php echo HTMLHelper::_('grid.sort',  'COM_CCPBIOSIM_EVENTS_ENDDATETIME', 'a.enddatetime', $listDirn, $listOrder); ?>
+					</th>
+
+					<th class=''>
+						<?php echo HTMLHelper::_('grid.sort',  'COM_CCPBIOSIM_EVENTS_LOCATION', 'a.location', $listDirn, $listOrder); ?>
+					</th>
+
+					<th class=''>
+						<?php echo HTMLHelper::_('grid.sort',  'COM_CCPBIOSIM_EVENTS_SHORTDESC', 'a.shortdesc', $listDirn, $listOrder); ?>
+					</th>
+
+					<th class=''>
+						<?php echo HTMLHelper::_('grid.sort',  'COM_CCPBIOSIM_EVENTS_YOUTUBE', 'a.youtube', $listDirn, $listOrder); ?>
+					</th>
+
+					<th class=''>
+						<?php echo HTMLHelper::_('grid.sort',  'COM_CCPBIOSIM_EVENTS_POSTEVENT', 'a.postevent', $listDirn, $listOrder); ?>
 					</th>
 
 						<?php if ($canEdit || $canDelete): ?>
@@ -122,6 +140,9 @@ $wa->useStyle('com_ccpbiosim.site')
 							<?php echo $this->escape($item->title); ?></a>
 					</td>
 					<td>
+						<?php echo $item->shorturl; ?>
+					</td>
+					<td>
 						<?php echo $item->category; ?>
 					</td>
 					<td>
@@ -129,6 +150,18 @@ $wa->useStyle('com_ccpbiosim.site')
 					</td>
 					<td>
 						<?php echo $item->enddatetime; ?>
+					</td>
+					<td>
+						<?php echo $item->location; ?>
+					</td>
+					<td>
+						<?php echo $item->shortdesc; ?>
+					</td>
+					<td>
+						<?php echo $item->youtube; ?>
+					</td>
+					<td>
+						<?php echo $item->postevent; ?>
 					</td>
 					<?php if ($canEdit || $canDelete): ?>
 						<td class="center">
