@@ -162,6 +162,11 @@ class HtmlView extends BaseHtmlView
 			'a.`category`' => Text::_('COM_CCPBIOSIM_EVENTS_CATEGORY'),
 			'a.`startdatetime`' => Text::_('COM_CCPBIOSIM_EVENTS_STARTDATETIME'),
 			'a.`enddatetime`' => Text::_('COM_CCPBIOSIM_EVENTS_ENDDATETIME'),
+			'a.`location`' => Text::_('COM_CCPBIOSIM_EVENTS_LOCATION'),
+			'a.`shortdesc`' => Text::_('COM_CCPBIOSIM_EVENTS_SHORTDESC'),
+			'a.`youtube`' => Text::_('COM_CCPBIOSIM_EVENTS_YOUTUBE'),
+			'a.`postevent`' => Text::_('COM_CCPBIOSIM_EVENTS_POSTEVENT'),
+			'a.`shorturl`' => Text::_('COM_CCPBIOSIM_EVENTS_SHORTURL'),
 		);
 	}
 
