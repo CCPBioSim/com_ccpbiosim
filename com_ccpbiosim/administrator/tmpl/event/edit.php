@@ -36,6 +36,11 @@ HTMLHelper::_('bootstrap.tooltip');
 				<?php echo $this->form->renderField('startdatetime'); ?>
 				<?php echo $this->form->renderField('enddatetime'); ?>
 				<?php echo $this->form->renderField('eventdetails'); ?>
+				<?php echo $this->form->renderField('location'); ?>
+				<?php echo $this->form->renderField('shortdesc'); ?>
+				<?php echo $this->form->renderField('youtube'); ?>
+				<?php echo $this->form->renderField('postevent'); ?>
+				<?php echo $this->form->renderField('shorturl'); ?>
 				<?php if ($this->state->params->get('save_history', 1)) : ?>
 					<div class="control-group">
 						<div class="control-label"><?php echo $this->form->getLabel('version_note'); ?></div>
