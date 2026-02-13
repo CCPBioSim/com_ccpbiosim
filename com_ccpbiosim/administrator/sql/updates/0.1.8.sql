@@ -1,0 +1,6 @@
+ALTER TABLE `#__ccpbiosim_events`
+ADD COLUMN `location` VARCHAR(255)  NOT NULL  DEFAULT "Manchester, UK",
+ADD COLUMN `shortdesc` VARCHAR(100)  NOT NULL ,
+ADD COLUMN `youtube` VARCHAR(255)  NULL  DEFAULT "",
+ADD COLUMN `postevent` TEXT NULL ,
+ADD COLUMN `shorturl` VARCHAR(255)  NOT NULL;
