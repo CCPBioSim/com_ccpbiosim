@@ -138,8 +138,8 @@
   }
 }
 
-/* ---------------------------------------------- Core Team ---------------------------------------- */
-/* --------- Community ---------*/
+/* ---------------------------------------------- Community ---------------------------------------- */
+/* --------- Card ---------*/
 
 .community-card {
   border: 1.5px solid #dee2e6; /* visible border */
@@ -158,3 +158,37 @@
 .community-card-body p {
   margin-bottom: 1rem;
 }
+
+/* ---------------------------------------------- Events ---------------------------------------- */
+/* --------- Events view ---------*/
+
+.events-date {
+  width: 72px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 6px 4px;
+  font-weight: 600;
+  line-height: 1.1;
+  flex-shrink: 0;
+}
+
+.events-date .day {
+  font-size: 1.4rem;
+}
+
+.events-date .month {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.events-date .year {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.events-date.range {
+  width: auto;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+
