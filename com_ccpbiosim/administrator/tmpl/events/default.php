@@ -74,6 +74,9 @@ if (!empty($saveOrder))
 							<?php echo HTMLHelper::_('searchtools.sort',  'COM_CCPBIOSIM_EVENTS_TITLE', 'a.title', $listDirn, $listOrder); ?>
 						</th>
 						<th class='left'>
+							<?php echo HTMLHelper::_('searchtools.sort',  'COM_CCPBIOSIM_EVENTS_SHORTURL', 'a.shorturl', $listDirn, $listOrder); ?>
+						</th>
+						<th class='left'>
 							<?php echo HTMLHelper::_('searchtools.sort',  'COM_CCPBIOSIM_EVENTS_CATEGORY', 'a.category', $listDirn, $listOrder); ?>
 						</th>
 						<th class='left'>
@@ -81,6 +84,18 @@ if (!empty($saveOrder))
 						</th>
 						<th class='left'>
 							<?php echo HTMLHelper::_('searchtools.sort',  'COM_CCPBIOSIM_EVENTS_ENDDATETIME', 'a.enddatetime', $listDirn, $listOrder); ?>
+						</th>
+						<th class='left'>
+							<?php echo HTMLHelper::_('searchtools.sort',  'COM_CCPBIOSIM_EVENTS_LOCATION', 'a.location', $listDirn, $listOrder); ?>
+						</th>
+						<th class='left'>
+							<?php echo HTMLHelper::_('searchtools.sort',  'COM_CCPBIOSIM_EVENTS_SHORTDESC', 'a.shortdesc', $listDirn, $listOrder); ?>
+						</th>
+						<th class='left'>
+							<?php echo HTMLHelper::_('searchtools.sort',  'COM_CCPBIOSIM_EVENTS_YOUTUBE', 'a.youtube', $listDirn, $listOrder); ?>
+						</th>
+						<th class='left'>
+							<?php echo HTMLHelper::_('searchtools.sort',  'COM_CCPBIOSIM_EVENTS_POSTEVENT', 'a.postevent', $listDirn, $listOrder); ?>
 						</th>
 						
 					<th scope="col" class="w-3 d-none d-lg-table-cell" >
@@ -154,6 +169,9 @@ if (!empty($saveOrder))
 								<?php endif; ?>
 							</td>
 							<td>
+								<?php echo $item->shorturl; ?>
+							</td>
+							<td>
 								<?php echo $item->category; ?>
 							</td>
 							<td>
@@ -161,6 +179,18 @@ if (!empty($saveOrder))
 							</td>
 							<td>
 								<?php echo $item->enddatetime; ?>
+							</td>
+							<td>
+								<?php echo $item->location; ?>
+							</td>
+							<td>
+								<?php echo $item->shortdesc; ?>
+							</td>
+							<td>
+								<?php echo $item->youtube; ?>
+							</td>
+							<td>
+								<?php echo $item->postevent; ?>
 							</td>
 							
 							<td class="d-none d-lg-table-cell">
