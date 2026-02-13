@@ -24,7 +24,6 @@ HTMLHelper::_('bootstrap.tooltip');
 	action="<?php echo Route::_('index.php?option=com_ccpbiosim&layout=edit&id=' . (int) $this->item->id); ?>"
 	method="post" enctype="multipart/form-data" name="adminForm" id="event-form" class="form-validate form-horizontal">
 
-	
 	<?php echo HTMLHelper::_('uitab.startTabSet', 'myTab', array('active' => 'event')); ?>
 	<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'event', Text::_('COM_CCPBIOSIM_TAB_EVENT', true)); ?>
 	<div class="row-fluid">
@@ -32,15 +31,15 @@ HTMLHelper::_('bootstrap.tooltip');
 			<fieldset class="adminform">
 				<legend><?php echo Text::_('COM_CCPBIOSIM_FIELDSET_EVENT'); ?></legend>
 				<?php echo $this->form->renderField('title'); ?>
+				<?php echo $this->form->renderField('shorturl'); ?>
 				<?php echo $this->form->renderField('category'); ?>
+				<?php echo $this->form->renderField('location'); ?>
 				<?php echo $this->form->renderField('startdatetime'); ?>
 				<?php echo $this->form->renderField('enddatetime'); ?>
-				<?php echo $this->form->renderField('eventdetails'); ?>
-				<?php echo $this->form->renderField('location'); ?>
 				<?php echo $this->form->renderField('shortdesc'); ?>
+				<?php echo $this->form->renderField('eventdetails'); ?>
 				<?php echo $this->form->renderField('youtube'); ?>
 				<?php echo $this->form->renderField('postevent'); ?>
-				<?php echo $this->form->renderField('shorturl'); ?>
 				<?php if ($this->state->params->get('save_history', 1)) : ?>
 					<div class="control-group">
 						<div class="control-label"><?php echo $this->form->getLabel('version_note'); ?></div>
@@ -58,7 +57,6 @@ HTMLHelper::_('bootstrap.tooltip');
 	<?php echo $this->form->renderField('created_by'); ?>
 	<?php echo $this->form->renderField('modified_by'); ?>
 
-	
 	<?php echo HTMLHelper::_('uitab.endTabSet'); ?>
 
 	<input type="hidden" name="task" value=""/>
