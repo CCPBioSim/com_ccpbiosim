@@ -124,12 +124,14 @@ $wa->useStyle('com_ccpbiosim.site')
                   <p class="mb-1"><?php echo $this->escape($item->shortdesc); ?></p>
                 </div>
                 <div class="col-md-3 text-md-end events-actions mt-3 mt-md-0">
-                  <?php $class = ($canChange) ? 'active' : 'disabled'; ?>
-                  <a class="btn btn-micro <?php echo $class; ?>" href="<?php echo ($canChange) ? Route::_('index.php?option=com_ccpbiosim&task=event.publish&id=' . $item->id . '&state=' . (($item->state + 1) % 2), false, 2) : '#'; ?>">
-                  <?php if ($item->state == 1): ?>
-                    <i class="icon-publish"></i>
-                  <?php else: ?>
-                    <i class="icon-unpublish"></i>
+                  <?php if ($canChange): ?>
+                    <?php $class = ($canChange) ? 'active' : 'disabled'; ?>
+                    <a class="btn btn-micro <?php echo $class; ?>" href="<?php echo ($canChange) ? Route::_('index.php?option=com_ccpbiosim&task=event.publish&id=' . $item->id . '&state=' . (($item->state + 1) % 2), false, 2) : '#'; ?>">
+                    <?php if ($item->state == 1): ?>
+                      <i class="icon-publish"></i>
+                    <?php else: ?>
+                      <i class="icon-unpublish"></i>
+                    <?php endif; ?>
                   <?php endif; ?>
                   </a>
                   <?php $canCheckin = Factory::getApplication()->getIdentity()->authorise('core.manage', 'com_ccpbiosim.' . $item->id) || $item->checked_out == Factory::getApplication()->getIdentity()->id; ?>
