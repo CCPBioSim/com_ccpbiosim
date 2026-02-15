@@ -162,6 +162,20 @@
 /* ---------------------------------------------- Events ---------------------------------------- */
 /* --------- Events view ---------*/
 
+.events-row {
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.events-row:hover {
+    background-color: #e9ecef;
+    transform: scale(1.01);
+}
+
+.events-actions button {
+    min-width: 80px;
+}
+
 .events-date {
   width: 72px;
   text-align: center;

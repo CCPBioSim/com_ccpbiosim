@@ -54,7 +54,7 @@ $wa->useStyle('com_ccpbiosim.site')
       <div id="conferences" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
         <div class="accordion-body">
           <?php foreach ($this->items as $i => $item) : ?>
-            <?php if ($item->category == "Conferences" && Factory::getDate($item->enddatetime) > Factory::getDate()): ?>
+            <?php if ($item->category == "Conferences" && Factory::getDate($item->enddatetime) < Factory::getDate()): ?>
               <div class="row events-row border rounded p-3 mb-3 bg-light" onclick="window.location.href='<?php echo Route::_('index.php?option=com_ccpbiosim&view=event&id='.(int) $item->id); ?>'">
                 <div class="col-md-1 events-date text-center bg-success text-white">
                   <div class="month"><?php echo Factory::getDate($item->startdatetime)->format("M"); ?></div>
@@ -107,7 +107,7 @@ $wa->useStyle('com_ccpbiosim.site')
       <div id="workshops" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
         <div class="accordion-body">
           <?php foreach ($this->items as $i => $item) : ?>
-            <?php if ($item->category == "Training Workshops" && Factory::getDate($item->enddatetime) > Factory::getDate()): ?>
+            <?php if ($item->category == "Training Workshops" && Factory::getDate($item->enddatetime) < Factory::getDate()): ?>
               <div class="row events-row border rounded p-3 mb-3 bg-light" onclick="window.location.href='<?php echo Route::_('index.php?option=com_ccpbiosim&view=event&id='.(int) $item->id); ?>'">
                 <div class="col-md-1 events-date text-center bg-warning text-white">
                   <div class="month"><?php echo Factory::getDate($item->startdatetime)->format("M"); ?></div>
@@ -160,7 +160,7 @@ $wa->useStyle('com_ccpbiosim.site')
       <div id="webinars" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
         <div class="accordion-body">
           <?php foreach ($this->items as $i => $item) : ?>
-            <?php if ($item->category == "Webinars" && Factory::getDate($item->enddatetime) > Factory::getDate()): ?>
+            <?php if ($item->category == "Webinars" && Factory::getDate($item->enddatetime) < Factory::getDate()): ?>
               <div class="row events-row border rounded p-3 mb-3 bg-light" onclick="window.location.href='<?php echo Route::_('index.php?option=com_ccpbiosim&view=event&id='.(int) $item->id); ?>'">
                 <div class="col-md-1 events-date text-center bg-primary text-white">
                   <div class="month"><?php echo Factory::getDate($item->startdatetime)->format("M"); ?></div>
