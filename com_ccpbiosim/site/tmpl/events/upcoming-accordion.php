@@ -98,7 +98,7 @@ $wa->useStyle('com_ccpbiosim.site')
       <div id="webinars" class="accordion-collapse collapse">
         <div class="accordion-body p-0">
           <?php foreach ($this->items as $i => $item) : ?>
-            <?php if ($item->category == "Webinars" && Factory::getDate($item->enddatetime > Factory::getDate()): ?>
+            <?php if ($item->category == "Webinars" && Factory::getDate($item->enddatetime) > Factory::getDate()): ?>
               <ul class="list-group list-group-flush">
                 <a href="<?php echo Route::_('index.php?option=com_ccpbiosim&view=event&id='.(int) $item->id); ?>"
                    class="list-group-item list-group-item-action d-flex align-items-start gap-3">
