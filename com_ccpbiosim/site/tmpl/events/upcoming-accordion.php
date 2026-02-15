@@ -80,7 +80,8 @@ $wa->useStyle('com_ccpbiosim.site')
                     <h6 class="mb-1"><?php echo $this->escape($item->title); ?></h6>
                     <small class="text-muted"><?php echo $this->escape($item->location); ?></small>
                     <p class="mb-1"><?php echo $this->escape($item->shortdesc); ?></p>
-
+                  </div>
+                  <div>
                     <?php $class = ($canChange) ? 'active' : 'disabled'; ?>
                     <a class="btn btn-micro <?php echo $class; ?>" href="<?php echo ($canChange) ? Route::_('index.php?option=com_ccpbiosim&task=event.publish&id=' . $item->id . '&state=' . (($item->state + 1) % 2), false, 2) : '#'; ?>">
                     <?php if ($item->state == 1): ?>
@@ -96,14 +97,13 @@ $wa->useStyle('com_ccpbiosim.site')
                       <?php echo HTMLHelper::_('jgrid.checkedout', $i, $item->uEditor, $item->checked_out_time, 'event.', false); ?></a>
 		    <?php endif; ?>
 
-		    <?php if ($canEdit || $canDelete): ?>
-		      <?php $canCheckin = Factory::getApplication()->getIdentity()->authorise('core.manage', 'com_ccpbiosim.' . $item->id) || $item->checked_out == Factory::getApplication()->getIdentity()->id; ?>
-		      <?php if($canEdit && $item->checked_out == 0): ?>
-		        <a href="<?php echo Route::_('index.php?option=com_ccpbiosim&task=event.edit&id=' . $item->id, false, 2); ?>" class="btn btn-mini" type="button"><i class="icon-edit" ></i></a>
-		      <?php endif; ?>
-		      <?php if ($canDelete): ?>
-		        <a href="<?php echo Route::_('index.php?option=com_ccpbiosim&task=eventform.remove&id=' . $item->id, false, 2); ?>" class="btn btn-mini delete-button" type="button"><i class="icon-trash" ></i></a>
-                      <?php endif; ?>
+		    <?php $canCheckin = Factory::getApplication()->getIdentity()->authorise('core.manage', 'com_ccpbiosim.' . $item->id) || $item->checked_out == Factory::getApplication()->getIdentity()->id; ?>
+		    <?php if($canEdit && $item->checked_out == 0): ?>
+	              <a href="<?php echo Route::_('index.php?option=com_ccpbiosim&task=event.edit&id=' . $item->id, false, 2); ?>" class="btn btn-mini bg-primary text-white" type="button"><i class="icon-edit" ></i></a>
+		    <?php endif; ?>
+
+		    <?php if ($canDelete): ?>
+		      <a href="<?php echo Route::_('index.php?option=com_ccpbiosim&task=eventform.remove&id=' . $item->id, false, 2); ?>" class="btn btn-mini bg-danger text-white delete-button" type="button"><i class="icon-trash" ></i></a>
                     <?php endif; ?>
                   </div>
                 </a>
