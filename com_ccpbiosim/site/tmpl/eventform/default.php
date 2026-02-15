@@ -59,25 +59,17 @@ $canEdit = CcpbiosimHelper::canUserEdit($this->item, $user);
 				<?php echo $this->form->getInput('modified_by'); ?>
 	<?php echo HTMLHelper::_('uitab.startTabSet', 'myTab', array('active' => 'event')); ?>
 	<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'event', Text::_('COM_CCPBIOSIM_TAB_EVENT', true)); ?>
-	<?php echo $this->form->renderField('title'); ?>
 
-	<?php echo $this->form->renderField('category'); ?>
-
-	<?php echo $this->form->renderField('startdatetime'); ?>
-
-	<?php echo $this->form->renderField('enddatetime'); ?>
-
-	<?php echo $this->form->renderField('eventdetails'); ?>
-
-	<?php echo $this->form->renderField('location'); ?>
-
-	<?php echo $this->form->renderField('shortdesc'); ?>
-
-	<?php echo $this->form->renderField('youtube'); ?>
-
-	<?php echo $this->form->renderField('postevent'); ?>
-
-	<?php echo $this->form->renderField('shorturl'); ?>
+        <?php echo $this->form->renderField('title'); ?>
+        <?php echo $this->form->renderField('shorturl'); ?>
+        <?php echo $this->form->renderField('category'); ?>
+        <?php echo $this->form->renderField('location'); ?>
+        <?php echo $this->form->renderField('startdatetime'); ?>
+        <?php echo $this->form->renderField('enddatetime'); ?>
+        <?php echo $this->form->renderField('shortdesc'); ?>
+        <?php echo $this->form->renderField('eventdetails'); ?>
+        <?php echo $this->form->renderField('youtube'); ?>
+        <?php echo $this->form->renderField('postevent'); ?>
 
 	<?php echo HTMLHelper::_('uitab.endTab'); ?>
 			<div class="control-group">
