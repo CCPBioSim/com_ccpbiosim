@@ -206,3 +206,54 @@
   font-size: 0.8rem;
 }
 
+/* ---------------------------------------------- Workshops ---------------------------------------- */
+/* --------- Workshops view ---------*/
+
+/* Smooth hover effect for cards */
+.workshopcard {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  border: 1.5px solid #dee2e6; /* visible border */
+  border-radius: 0.75rem;
+  padding: 16px;
+}
+
+.workshopcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+/* Left image card layout */
+.workshopcard-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.workshopcard-horizontal img {
+  max-width: 120px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-right: 15px;
+}
+
+.workshopcard-summary {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.workshopbadge-category {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .workshopcard-horizontal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .workshopcard-horizontal img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
