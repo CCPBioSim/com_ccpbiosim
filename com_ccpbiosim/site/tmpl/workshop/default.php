@@ -60,7 +60,9 @@ $mappings = array("setup" => "Courses for Simulation Setup",
                       data-image="https://via.placeholder.com/400x300?text=<?php echo $course; ?>"
                       data-link="https://ccpbiosim.ac.uk/notebooks/hub/spawn?profile=<?php echo $course; ?>"
                       docker-pull="docker pull ghcr.io/ccpbiosim/<?php echo $course; ?>:latest"
-                      docker-run="docker run -p 8888:8888 ghcr.io/ccpbiosim/<?php echo $course; ?>:latest">
+                      docker-run="docker run -p 8888:8888 ghcr.io/ccpbiosim/<?php echo $course; ?>:latest"
+                      badge-repo="https://img.shields.io/badge/github-source%20code-blue?style=for-the-badge&logo=github&link=https%3A%2F%2Fgithub.com%2Fccpbiosim%2F<?php echo $course; ?>"
+                      badge-build="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fccpbiosim.github.io%2Fworkshop.json&query=%24.containers.<?php echo $course; ?>.latest&style=for-the-badge&logo=github&label=Latest%20Build">
                     <img src="https://via.placeholder.com/120" alt="<?php echo $course; ?>">
                     <div class="workshopcard-body">
                       <h5 class="workshopcard-title"><?php echo $coursedata["name"]; ?></h5>
@@ -90,10 +92,11 @@ $mappings = array("setup" => "Courses for Simulation Setup",
         <img src="" id="courseModalImage" class="img-fluid mb-3" alt="Course Image">
         <p id="courseModalSummary" class="fw-bold"></p>
         <p id="courseModalDescription"></p>
-        <span class="badge bg-secondary" id="courseModalCategory"></span>
+        <img id="courseModalBadgeRepo" alt="Static Badge" src="">
+        <img id="courseModalBadgeBuild" alt="Dynamic JSON Badge" src="">
         <p><strong>Want to run this on your own machine?</strong></p>
         <p>You will need to have a working install of <a href="https://docs.docker.com/engine/install/">docker</a> first before running:</p>
-        <code id="courseModalDockerPull"></code>
+        <code id="courseModalDockerPull"></code></br>
         <code id="courseModalDockerRun"></code>
       </div>
       <div class="modal-footer">
@@ -117,15 +120,18 @@ $mappings = array("setup" => "Courses for Simulation Setup",
     const link = card.getAttribute('data-link');
     const dpull = card.getAttribute('docker-pull');
     const drun = card.getAttribute('docker-run');
+    const brepo = card.getAttribute('badge-repo');
+    const bbuild = card.getAttribute('badge-build');
 
     document.getElementById('courseModalLabel').textContent = title;
     document.getElementById('courseModalSummary').textContent = summary;
     document.getElementById('courseModalDescription').textContent = description;
-    document.getElementById('courseModalCategory').textContent = category;
     document.getElementById('courseModalImage').src = image;
     document.getElementById('courseModalImage').alt = title;
     document.getElementById('courseModalLink').href = link;
     document.getElementById('courseModalDockerPull').textContent = dpull;
     document.getElementById('courseModalDockerRun').textContent = drun;
+    document.getElementById('courseModalBadgeRepo').src = brepo;
+    document.getElementById('courseModalBadgeBuild').src = bbuild;
   });
 </script>
