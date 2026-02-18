@@ -45,8 +45,8 @@ $mappings = array("setup" => "Courses for Simulation Setup",
     <?php foreach ($data_sorted as $category => $categorydata) : ?>
       <?php if ($category != "infrastructure") : ?>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="heading<?php echo $category; ?>"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo $category; ?>" aria-expanded="false" aria-controls="<?php echo $category; ?>"><?php echo $mappings[$category]; ?></button></h2>
-          <div id="<?php echo $category; ?>" class="accordion-collapse collapse" aria-labelledby="heading<?php echo $category; ?>" data-bs-parent="#courseAccordion">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo $category; ?>" aria-expanded="false"><?php echo $mappings[$category]; ?></button></h2>
+          <div id="<?php echo $category; ?>" class="accordion-collapse collapse" data-bs-parent="#courseAccordion">
             <div class="accordion-body">
               <div class="row g-4">
                 <?php foreach ($categorydata as $course => $coursedata) : ?>
@@ -106,8 +106,8 @@ $mappings = array("setup" => "Courses for Simulation Setup",
         <p id="courseModalDescription"></p>
         <p><strong>Want to run this on your own machine?</strong></p>
         <p>You will need to have a working install of <a target="_blank" href="https://docs.docker.com/engine/install/">docker</a> first before running:</p>
-        <code id="courseModalDockerPull"></code></br>
-        <p>Followed by:</p>
+        <code id="courseModalDockerPull"></code>
+        <p style="padding-top: 10px;">Followed by:</p>
         <code id="courseModalDockerRun"></code>
       </div>
       <div class="modal-footer">
