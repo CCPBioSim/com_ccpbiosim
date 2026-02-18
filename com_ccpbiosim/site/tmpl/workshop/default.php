@@ -106,8 +106,8 @@ $mappings = array("setup" => "Courses for Simulation Setup",
         <p id="courseModalDescription"></p>
         <p><strong>Want to run this on your own machine?</strong></p>
         <p>You will need to have a working install of <a target="_blank" href="https://docs.docker.com/engine/install/">docker</a> first before running:</p>
-        <code id="courseModalDockerPull"></code></br>
-        <p>Followed by:</p>
+        <code id="courseModalDockerPull"></code>
+        <p style="padding-top: 10px;">Followed by:</p>
         <code id="courseModalDockerRun"></code>
       </div>
       <div class="modal-footer">
