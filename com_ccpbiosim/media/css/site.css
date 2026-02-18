@@ -257,3 +257,18 @@
     margin-bottom: 10px;
   }
 }
+
+.workshopbadge-repo {
+  float: right;
+  padding: 1px
+}
+
+.workshopbadge-build {
+  float: right;
+  padding: 1px;
+}
+
+.modalworkshop-summarytext {
+  clear: right;
+  padding-top: 5px;
+}

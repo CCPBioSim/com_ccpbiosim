@@ -35,8 +35,8 @@ $wa->useStyle('com_ccpbiosim.site')
 
 <div class="container my-5">
   <!-- Community Purpose -->
-  <div class="community-card mb-5 shadow-sm">
-    <div class="community-card-body fade-up">
+  <div class="community-card mb-5 shadow-sm fade-up">
+    <div class="community-card-body">
       <h2 class="community-card-title mb-4"><i class="bi bi-heart-fill me-2"></i>Community Purpose</h2>
       <p>The community brings together:</p>
       <ul>
@@ -49,8 +49,8 @@ $wa->useStyle('com_ccpbiosim.site')
   </div>
 
   <!-- What the Community Does -->
-  <div class="community-card mb-5 shadow-sm">
-    <div class="community-card-body fade-up">
+  <div class="community-card mb-5 shadow-sm fade-up">
+    <div class="community-card-body">
       <h2 class="community-card-title mb-4"><i class="bi bi-gear-fill me-2"></i>What the Community Does</h2>
       <p>CCPBioSim supports its community through:</p>
       <ul>
@@ -62,8 +62,8 @@ $wa->useStyle('com_ccpbiosim.site')
     </div>
   </div>
    <!-- Community Values -->
-  <div class="community-card mb-5 shadow-sm">
-    <div class="community-card-body fade-up">
+  <div class="community-card mb-5 shadow-sm fade-up">
+    <div class="community-card-body">
       <h2 class="community-card-title mb-4"><i class="bi bi-stars me-2"></i>Community Values</h2>
       <p>The CCPBioSim community emphasises:</p>
       <ul>
@@ -74,8 +74,8 @@ $wa->useStyle('com_ccpbiosim.site')
     </div>
   </div>
    <!-- Links with Wider Initiatives -->
-  <div class="community-card mb-5 shadow-sm">
-    <div class="community-card-body fade-up">
+  <div class="community-card mb-5 shadow-sm fade-up">
+    <div class="community-card-body">
       <h2 class="community-card-title mb-4"><i class="bi bi-link-45deg me-2"></i>Links with Wider Initiatives</h2>
       <p>CCPBioSim contributes to national data infrastructure efforts, like integrating provenance and reproducibility for simulation data.</p>
       <p>It collaborates with other computational biology communities and projects (e.g., through consortia like DRIIMB).</p>
