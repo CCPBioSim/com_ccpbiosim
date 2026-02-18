@@ -70,8 +70,8 @@ $mappings = array("setup" => "Courses for Simulation Setup",
                       <h5 class="workshopcard-title"><?php echo $coursedata["name"]; ?></h5>
                       <p class="workshopcard-summary"><?php echo $coursedata["shortdesc"]; ?></p>
                     </div>
+                    </div>
                   </div>
-                </div>
                 <? endforeach ?>
               </div>
             </div>
@@ -117,8 +117,7 @@ $mappings = array("setup" => "Courses for Simulation Setup",
     </div>
   </div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/media/vendor/bootstrap/js/modal.min.js?5.3.8" type="module"></script>
 <script>
   const courseModal = document.getElementById('courseModal');
   courseModal.addEventListener('show.bs.modal', event => {
