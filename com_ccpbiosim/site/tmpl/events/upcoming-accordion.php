@@ -35,6 +35,7 @@ $wa = $this->document->getWebAssetManager();
 $wa->useStyle('com_ccpbiosim.site')
    ->useScript('com_ccpbiosim.site');
 $categories = array_unique(array_column($this->items, 'category'));
+asort($categories);
 ?>
 <?php if ($this->params->get('show_page_heading')) : ?>
     <div class="page-header">
