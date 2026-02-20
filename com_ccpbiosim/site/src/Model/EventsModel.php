@@ -76,8 +76,9 @@ class EventsModel extends ListModel
 		$list = $app->getUserState($this->context . '.list');
 
 		$value = $app->getUserState($this->context . '.list.limit', $app->get('list_limit', 25));
-		$list['limit'] = $value;
-		
+                $value = 0; // setting this to zero will load all records.
+                $list['limit'] = $value;
+
 		$this->setState('list.limit', $value);
 
 		$value = $app->input->get('limitstart', 0, 'uint');
@@ -85,15 +86,13 @@ class EventsModel extends ListModel
 
 		$ordering  = $this->getUserStateFromRequest($this->context .'.filter_order', 'filter_order', "a.startdatetime");
 		$direction = strtoupper($this->getUserStateFromRequest($this->context .'.filter_order_Dir', 'filter_order_Dir', "DESC"));
-		
+
 		if(!empty($ordering) || !empty($direction))
 		{
 			$list['fullordering'] = $ordering . ' ' . $direction;
 		}
 
 		$app->setUserState($this->context . '.list', $list);
-
-		
 
 		$context = $this->getUserStateFromRequest($this->context.'.filter.search', 'filter_search');
 		$this->setState('filter.search', $context);
