@@ -85,6 +85,7 @@ class ManagementteamsModel extends ListModel
 		$list = $app->getUserState($this->context . '.list');
 
 		$value = $app->getUserState($this->context . '.list.limit', $app->get('list_limit', 25));
+		$value = 0; // setting this to zero will load all records.
 		$list['limit'] = $value;
 		
 		$this->setState('list.limit', $value);
