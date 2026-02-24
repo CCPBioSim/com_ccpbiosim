@@ -59,7 +59,7 @@ class NestedparentField extends ListField
 		}
 		catch (\RuntimeException $e)
 		{
-			\JError::raiseWarning(500, $e->getMessage());
+		    throw new \Exception(Text::(500, $e->getMessage()));
 		}
 
 		// Pad the option text with spaces using depth level as a multiplier.
