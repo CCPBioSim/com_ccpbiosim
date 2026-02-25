@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>CCPBioSim Hero Module</name>
+    <version>0.0.1</version>
+    <author>James Gebbie-Rayet</author>
+    <creationDate>2025/02/25</creationDate>
+    <description>Module for showing hero banner</description>
+    <namespace path="src">Ccpbiosim\Module\Hero</namespace>
+    <files>
+        <folder module="mod_ccpbiosim_hero">services</folder>
+        <folder>language</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="hero-image"
+                    type="accessiblemedia"
+                    directory="banners"
+                />
+                
+                <field
+                    name="header"
+                    type="list"
+                    label="MOD_HELLO_HEADER_LEVEL"
+                    >
+                    <option value="h3">MOD_HELLO_HEADER_LEVEL_3</option>
+                    <option value="h4">MOD_HELLO_HEADER_LEVEL_4</option>
+                    <option value="h5">MOD_HELLO_HEADER_LEVEL_5</option>
+                    <option value="h6">MOD_HELLO_HEADER_LEVEL_6</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
