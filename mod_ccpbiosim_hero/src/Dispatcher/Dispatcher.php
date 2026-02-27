@@ -4,21 +4,32 @@ namespace Ccpbiosim\Module\Hero\Site\Dispatcher;
 \defined('_JEXEC') or die;
 
 use Joomla\CMS\Dispatcher\DispatcherInterface;
+use Joomla\CMS\Helper\ModuleHelper;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
-use Joomla\CMS\Helper\ModuleHelper;
-use My\Module\Hello\Site\Helper\HeroHelper;
+use Joomla\CMS\Application\CMSApplicationInterface;
+use Joomla\Input\Input;
+use Joomla\Registry\Registry;
+use Ccpbiosim\Module\Hero\Site\Helper\HeroHelper;
 
 class Dispatcher implements DispatcherInterface
 {
+
+    protected $module;
+    
+    protected $app;
+
+    public function __construct(\stdClass $module, CMSApplicationInterface $app, Input $input)
+    {
+        $this->module = $module;
+        $this->app = $app;
+    }
+
     public function dispatch()
     {
-        $language = Factory::getApplication()->getLanguage();
+        $language = $this->app->getLanguage();
         $language->load('mod_ccpbiosim_hero', JPATH_BASE . '/modules/mod_ccpbiosim_hero');
-        
-        $username = HeroHelper::getLoggedonUsername('Guest');
-
-        $data = "Hello {$username}";
+        $params = new Registry($this->module->params);
 
         require ModuleHelper::getLayoutPath('mod_ccpbiosim_hero');
     }
