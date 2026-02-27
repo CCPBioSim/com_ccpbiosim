@@ -1,5 +1,5 @@
 <?php
-namespace Ccpbiosim\Module\Hero\Site\Dispatcher;
+namespace Ccpbiosim\Module\Mailinglist\Site\Dispatcher;
 
 \defined('_JEXEC') or die;
 
@@ -10,7 +10,7 @@ use Joomla\CMS\Language\Text;
 use Joomla\CMS\Application\CMSApplicationInterface;
 use Joomla\Input\Input;
 use Joomla\Registry\Registry;
-use Ccpbiosim\Module\Hero\Site\Helper\HeroHelper;
+use Ccpbiosim\Module\Mailinglist\Site\Helper\MailinglistHelper;
 
 class Dispatcher implements DispatcherInterface
 {
@@ -28,10 +28,10 @@ class Dispatcher implements DispatcherInterface
     public function dispatch()
     {
         $language = $this->app->getLanguage();
-        $language->load('mod_ccpbiosim_hero', JPATH_BASE . '/modules/mod_ccpbiosim_hero');
+        $language->load('mod_ccpbiosim_mailinglist', JPATH_BASE . '/modules/mod_ccpbiosim_mailinglist');
         $params = new Registry($this->module->params);
 
-        require ModuleHelper::getLayoutPath('mod_ccpbiosim_hero');
+        require ModuleHelper::getLayoutPath('mod_ccpbiosim_mailinglist');
     }
 }
 
