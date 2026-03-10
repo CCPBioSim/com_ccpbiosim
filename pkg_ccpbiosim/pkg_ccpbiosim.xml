@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension type="package" method="upgrade">
+<extension type="package" version="4.0" method="upgrade">
   <name>pkg_ccpbiosim</name>
   <author>James Gebbie-Rayet</author>
   <creationDate>2026/02/27</creationDate>
