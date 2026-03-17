@@ -4,7 +4,7 @@
     <description>A Joomla component for custom CCPBioSim features.</description>
     <element>pkg_ccpbiosim</element>
     <type>package</type>
-    <version>v0.6.1</version>
+    <version>0.6.1</version>
     <infourl title="CCPBioSim">
             https://github.com/ccpbiosim/pkg_ccpbiosim
         </infourl>
