@@ -15,6 +15,5 @@
     <maintainer>CCPBioSim Dev Team</maintainer>
     <maintainerurl>https://www.ccpbiosim.ac.uk</maintainerurl>
     <targetplatform name="joomla" version="6.*"/>
-    <client>administrator</client>
   </update>
 </updates>
