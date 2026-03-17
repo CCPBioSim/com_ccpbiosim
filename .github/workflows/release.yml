@@ -24,14 +24,14 @@ jobs:
 
       - name: Inject version number into source file manifests
         run: |
-          xmlstarlet ed --inplace -u "/extension/version" -v v${{ github.event.inputs.version }} pkg_ccpbiosim/pkg_ccpbiosim.xml
-          xmlstarlet ed --inplace -u "/extension/version" -v v${{ github.event.inputs.version }} pkg_ccpbiosim/constituents/com_ccpbiosim/ccpbiosim.xml
-          xmlstarlet ed --inplace -u "/extension/version" -v v${{ github.event.inputs.version }} pkg_ccpbiosim/constituents/mod_ccpbiosim_hero/mod_ccpbiosim_hero.xml
-          xmlstarlet ed --inplace -u "/extension/version" -v v${{ github.event.inputs.version }} pkg_ccpbiosim/constituents/mod_ccpbiosim_mailinglist/mod_ccpbiosim_mailinglist.xml
-          xmlstarlet ed --inplace -u "/extension/version" -v v${{ github.event.inputs.version }} pkg_ccpbiosim/constituents/mod_ccpbiosim_activities/mod_ccpbiosim_activities.xml
+          xmlstarlet ed --inplace -u "/extension/version" -v ${{ github.event.inputs.version }} pkg_ccpbiosim/pkg_ccpbiosim.xml
+          xmlstarlet ed --inplace -u "/extension/version" -v ${{ github.event.inputs.version }} pkg_ccpbiosim/constituents/com_ccpbiosim/ccpbiosim.xml
+          xmlstarlet ed --inplace -u "/extension/version" -v ${{ github.event.inputs.version }} pkg_ccpbiosim/constituents/mod_ccpbiosim_hero/mod_ccpbiosim_hero.xml
+          xmlstarlet ed --inplace -u "/extension/version" -v ${{ github.event.inputs.version }} pkg_ccpbiosim/constituents/mod_ccpbiosim_mailinglist/mod_ccpbiosim_mailinglist.xml
+          xmlstarlet ed --inplace -u "/extension/version" -v ${{ github.event.inputs.version }} pkg_ccpbiosim/constituents/mod_ccpbiosim_activities/mod_ccpbiosim_activities.xml
 
       - name: Inject version number into update.xml
-        run: xmlstarlet ed --omit-decl --inplace -u "/updates/update/version" -v v${{ github.event.inputs.version }} update.xml
+        run: xmlstarlet ed --omit-decl --inplace -u "/updates/update/version" -v ${{ github.event.inputs.version }} update.xml
 
       - name: Inject update file path into update.xml
         run: xmlstarlet ed --omit-decl --inplace -u "/updates/update/downloads/downloadurl" -v "https://github.com/ccpbiosim/pkg_ccpbiosim/releases/download/${{ github.event.inputs.version }}/pkg_ccpbiosim-${{ github.event.inputs.version }}.zip" update.xml
