@@ -5,9 +5,7 @@
     <element>pkg_ccpbiosim</element>
     <type>package</type>
     <version>0.6.1</version>
-    <infourl title="CCPBioSim">
-            https://github.com/ccpbiosim/pkg_ccpbiosim
-        </infourl>
+    <infourl title="CCPBioSim">https://github.com/ccpbiosim/pkg_ccpbiosim</infourl>
     <downloads>
       <downloadurl type="full" format="zip">https://github.com/ccpbiosim/pkg_ccpbiosim/releases/download/0.6.1/pkg_ccpbiosim-0.6.1.zip</downloadurl>
     </downloads>
